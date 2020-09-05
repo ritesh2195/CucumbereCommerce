@@ -7,7 +7,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 7599671800,
+  "duration": 10177415000,
   "status": "passed"
 });
 formatter.scenario({
@@ -78,7 +78,7 @@ formatter.match({
   "location": "login1.i_naviagate_to_launch_page_of_the_application()"
 });
 formatter.result({
-  "duration": 19071460700,
+  "duration": 19001203400,
   "status": "passed"
 });
 formatter.match({
@@ -95,14 +95,14 @@ formatter.match({
   "location": "login1.user_enters_the_Username_and_Password_into_the_fields(String,String)"
 });
 formatter.result({
-  "duration": 8528181900,
+  "duration": 8366522700,
   "status": "passed"
 });
 formatter.match({
   "location": "login1.user_should_be_abale_to_succefully_Login()"
 });
 formatter.result({
-  "duration": 5117240000,
+  "duration": 5149415900,
   "status": "passed"
 });
 formatter.match({
@@ -115,53 +115,53 @@ formatter.match({
   "location": "login1.I_type_item_in_the_search_box(String)"
 });
 formatter.result({
-  "duration": 3165547800,
+  "duration": 4188335700,
   "status": "passed"
 });
 formatter.match({
   "location": "login1.I_select_the_particular_item()"
 });
 formatter.result({
-  "duration": 4100938700,
+  "duration": 3860608800,
   "status": "passed"
 });
 formatter.match({
   "location": "login1.I_click_on_the_add_item_to_cart_field()"
 });
 formatter.result({
-  "duration": 5090640800,
+  "duration": 7014777600,
   "status": "passed"
 });
 formatter.match({
   "location": "login1.I_click_on_the_proceed_to_checkout_field()"
 });
 formatter.result({
-  "duration": 4516962300,
+  "duration": 5896928000,
   "status": "passed"
 });
 formatter.match({
   "location": "login1.I_click_on_agree_term_and_proceed_to_checkout_field()"
 });
 formatter.result({
-  "duration": 2569939600,
+  "duration": 1897743200,
   "status": "passed"
 });
 formatter.match({
   "location": "login1.I_click_on_the_payment_field()"
 });
 formatter.result({
-  "duration": 11625717900,
+  "duration": 11337806300,
   "status": "passed"
 });
 formatter.match({
   "location": "login1.I_click_on_the_confirm_my_order_field()"
 });
 formatter.result({
-  "duration": 14394775700,
+  "duration": 13148253500,
   "status": "passed"
 });
 formatter.after({
-  "duration": 829339000,
+  "duration": 917081700,
   "status": "passed"
 });
 });

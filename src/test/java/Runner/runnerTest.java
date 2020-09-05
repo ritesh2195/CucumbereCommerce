@@ -24,7 +24,7 @@ import cucumber.api.junit.Cucumber;
 */
 
 )
-public class runner {
+public class runnerTest {
 	@BeforeClass
 	public static void setup() {
 
