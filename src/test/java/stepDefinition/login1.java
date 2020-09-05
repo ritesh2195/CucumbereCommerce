@@ -31,7 +31,7 @@
 
 		public login1(TestContext context){
 
-			testContext=context;
+		testContext=context;
 		}
 
 		@Given("^I naviagate to launch page of the application and click on login link field$")
@@ -39,11 +39,7 @@
 
 		LaunchPage1=testContext.getPageObjectManager().getLaunchPage();
 
-	    //pageObjectManager = new PageObjectManager(driver);
-
-	    //LaunchPage1 = pageObjectManager.getLaunchPage();
-
-	    LaunchPage1.SingInPage();
+	        LaunchPage1.SingInPage();
 
 		}
 		
@@ -51,8 +47,6 @@
 		public void user_enters_the_Username_and_Password_into_the_fields(String username, String password) throws InterruptedException {
 
 		SignPage1=testContext.getPageObjectManager().getSignPage();
-
-	    //SignPage1 = pageObjectManager.getSignPage();
 
 		SignPage1.DoSignin(Constant.USERNAME,Constant.PASSWORD );
 		
@@ -77,8 +71,6 @@
 
 		searchIteamPage=testContext.getPageObjectManager().getSearchIteamPage();
 
-	    //searchIteamPage = pageObjectManager.getSearchIteamPage();
-
 		searchIteamPage.searchItem("dress");
 			
 		}
@@ -88,8 +80,6 @@
 
 		selectItemPage=testContext.getPageObjectManager().getSelectItemPage();
 
-	    //selectItemPage = pageObjectManager.getSelectItemPage();
-
 		selectItemPage.choosingItem();
 			
 		}
@@ -98,8 +88,6 @@
 		public void I_click_on_the_add_item_to_cart_field() throws InterruptedException {
 
 		cartPage=testContext.getPageObjectManager().getCartPage();
-
-	    //cartPage = pageObjectManager.getCartPage();
 
 		try {
 			
@@ -118,8 +106,6 @@
 
 		proceedPage=testContext.getPageObjectManager().getProceedPage();
 
-	    //proceedPage = pageObjectManager.getProceedPage();
-
 		proceedPage.proceedCheckout();
 			
 		}
@@ -128,8 +114,6 @@
 		public void I_click_on_agree_term_and_proceed_to_checkout_field() {
 
 		termPage=testContext.getPageObjectManager().getTermPage();
-
-	    //termPage = pageObjectManager.getTermPage();
 
 		termPage.agreeTerm1();
 			
@@ -140,16 +124,10 @@
 
 		paymentPage=testContext.getPageObjectManager().getPayment();
 
-	    //paymentPage = pageObjectManager.getPayment();
-
 		paymentPage.payment();
 		
 		Thread.sleep(10000);
 		
-		//JavascriptExecutor jsExec = (JavascriptExecutor)driver;
-
-		//jsExec.executeScript("window.scrollBy(0,600)");
-
 		}
 		
 		@Then("^I click on the confirm my order field$")
@@ -157,19 +135,10 @@
 
 		confirmationPage=testContext.getPageObjectManager().getConfirmationPage();
 
-	    //confirmationPage = pageObjectManager.getConfirmationPage();
-
 		confirmationPage.confirm();
 		
 		Thread.sleep(10000);
 			
-		}
-
-		//@After("@Login")
-		public void closingBrowser() {
-
-		//driver.quit();
-
 		}
 
 	}
