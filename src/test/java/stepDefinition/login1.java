@@ -60,7 +60,15 @@
 
 		verifyingPage=testContext.getPageObjectManager().getVerifyingPage();
 
-		verifyingPage.verifyLogin();
+			boolean status = verifyingPage.verifyLogin();
+
+			if (status==true)
+
+				assert true;
+
+			else
+
+				Assert.fail("Login Test is failed");
 
 		Thread.sleep(5000);
 		
