@@ -21,15 +21,9 @@ public class VerifyingPage {
 
     }
 
-    public void  verifyLogin(){
+    public boolean  verifyLogin(){
 
-        if(loginElement.isDisplayed()) {
-
-        } else {
-
-            Assert.fail("Login Test is failed");
-
-        }
+        return (loginElement.isDisplayed());
 
     }
 }
