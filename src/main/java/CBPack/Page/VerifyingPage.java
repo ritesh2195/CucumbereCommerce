@@ -12,6 +12,9 @@ public class VerifyingPage {
 
     @FindBy(xpath = "//*[text()='My account']")
     private WebElement loginElement;
+    
+    @FindBy(xpath = "//div[@id='center_column']//p")
+    private WebElement SignUpElement;
 
     public VerifyingPage(WebDriver driver){
 
@@ -25,5 +28,10 @@ public class VerifyingPage {
 
         return (loginElement.isDisplayed());
 
+    }
+    
+    public String validateSignUpTest(){
+
+       return SignUpElement.getText();
     }
 }
