@@ -6,6 +6,7 @@ import CBPack.util.Constant;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import org.junit.Assert;
 
 public class SearchTest {
 
@@ -20,6 +21,8 @@ public class SearchTest {
     SignInPage SignPage1;
     VerifyingPage verifyingPage;
     TestContext testContext;
+    static String cartPrice;
+    static String finalPrice;
 
     public SearchTest(TestContext context){
 
@@ -58,6 +61,8 @@ public class SearchTest {
 
     cartPage=testContext.getPageObjectManager().getCartPage();
 
+    cartPrice = cartPage.getCartPrice();
+
     cartPage.addCart();
 
     }
@@ -66,6 +71,8 @@ public class SearchTest {
     public void user_click_on_the_proceed_to_checkout_field() {
 
     proceedPage=testContext.getPageObjectManager().getProceedPage();
+
+    finalPrice = proceedPage.getFinalPrice();
 
     proceedPage.proceedCheckout();
 
@@ -101,7 +108,7 @@ public class SearchTest {
     @Then("^user should be able to place order of the product$")
     public void user_should_be_able_to_place_order_of_the_product() {
 
-    System.out.println("order is successful");
+    Assert.assertEquals(cartPrice,finalPrice);
 
     }
 

@@ -28,7 +28,7 @@ import cucumber.api.junit.Cucumber;
 
 		glue= {"stepDefinition"},
 
-		tags= {"@login"}
+		tags= {"@search"}
 
 )
 public class runnerTest {

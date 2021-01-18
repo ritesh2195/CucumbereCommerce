@@ -1,53 +1,143 @@
 [
   {
-    "source": "^User enters the Username ([^\"]*) and Password ([^\"]*) into the fields$",
+    "source": "^user click on the confirm order$",
     "steps": [
       {
-        "name": "User enters the Username riteshranjanmishra938@gmail.com and Password mishra21 into the fields",
+        "name": "user click on the confirm order",
         "aggregatedDurations": {
-          "average": 2.810012201,
-          "median": 2.810012201
+          "average": 5.397974899,
+          "median": 5.397974899
         },
         "durations": [
           {
-            "duration": 2.810012201,
-            "location": "Login.feature:5"
+            "duration": 5.397974899,
+            "location": "Search.feature:12"
           }
         ]
       }
     ]
   },
   {
-    "source": "^user should be abale to succefully Login$",
+    "source": "^user add payment method$",
     "steps": [
       {
-        "name": "user should be abale to succefully Login",
+        "name": "user add payment method",
         "aggregatedDurations": {
-          "average": 0.107568001,
-          "median": 0.107568001
+          "average": 2.354852501,
+          "median": 2.354852501
         },
         "durations": [
           {
-            "duration": 0.107568001,
-            "location": "Login.feature:6"
+            "duration": 2.354852501,
+            "location": "Search.feature:11"
           }
         ]
       }
     ]
   },
   {
-    "source": "^I naviagate to launch page of the application and click on login link field$",
+    "source": "^user login into application$",
     "steps": [
       {
-        "name": "I naviagate to launch page of the application and click on login link field",
+        "name": "user login into application",
         "aggregatedDurations": {
-          "average": 12.7195938,
-          "median": 12.7195938
+          "average": 14.7486883,
+          "median": 14.7486883
         },
         "durations": [
           {
-            "duration": 12.7195938,
-            "location": "Login.feature:4"
+            "duration": 14.7486883,
+            "location": "Search.feature:6"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^user click on agree term and proceed to checkout field$",
+    "steps": [
+      {
+        "name": "user click on agree term and proceed to checkout field",
+        "aggregatedDurations": {
+          "average": 3.7572343,
+          "median": 3.7572343
+        },
+        "durations": [
+          {
+            "duration": 3.7572343,
+            "location": "Search.feature:10"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^user click on the proceed to checkout field$",
+    "steps": [
+      {
+        "name": "user click on the proceed to checkout field",
+        "aggregatedDurations": {
+          "average": 5.1669717,
+          "median": 5.1669717
+        },
+        "durations": [
+          {
+            "duration": 5.1669717,
+            "location": "Search.feature:9"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^user should be able to place order of the product$",
+    "steps": [
+      {
+        "name": "user should be able to place order of the product",
+        "aggregatedDurations": {
+          "average": 30.0135637,
+          "median": 30.0135637
+        },
+        "durations": [
+          {
+            "duration": 30.0135637,
+            "location": "Search.feature:13"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^user search a \"([^\"]*)\"$",
+    "steps": [
+      {
+        "name": "user search a \"Product\"",
+        "aggregatedDurations": {
+          "average": 7.5406995,
+          "median": 7.5406995
+        },
+        "durations": [
+          {
+            "duration": 7.5406995,
+            "location": "Search.feature:7"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^user click on the add item to cart field$",
+    "steps": [
+      {
+        "name": "user click on the add item to cart field",
+        "aggregatedDurations": {
+          "average": 6.3531589,
+          "median": 6.3531589
+        },
+        "durations": [
+          {
+            "duration": 6.3531589,
+            "location": "Search.feature:8"
           }
         ]
       }

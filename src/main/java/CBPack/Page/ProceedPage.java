@@ -12,6 +12,9 @@
 	
 	@FindBy(name="processAddress")
 	private WebElement proceedCheckout2;
+
+	@FindBy(id = "total_product")
+	private WebElement ProductPrice;
 	
 	public ProceedPage(WebDriver driver) {
 
@@ -29,7 +32,12 @@
 	waitForElementToClickable(proceedCheckout2);
 	
 	proceedCheckout2.click();
-		
-		
+
 	}
+
+	public String getFinalPrice(){
+
+		return ProductPrice.getText();
+	}
+
 	}

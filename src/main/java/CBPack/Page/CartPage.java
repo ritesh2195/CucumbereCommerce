@@ -10,6 +10,9 @@
 	
 	public class CartPage extends BasePage {
 
+	@FindBy(css="#our_price_display")
+	private WebElement PriceProduct;
+
 	@FindBy(xpath="//*[text()='Add to cart']")
 	private WebElement addToCart;
 	
@@ -37,7 +40,7 @@
 		
 	qualityWanted.clear();
 	
-	qualityWanted.sendKeys("2");
+	qualityWanted.sendKeys("1");
 	
 	Select select=new Select(Size);
 	
@@ -51,6 +54,16 @@
 	
 	ProceedToCheckout.click();
 	
+	}
+
+	public String getCartPrice(){
+
+		return PriceProduct.getText();
+	}
+
+	public String getProductColor(){
+
+		return Colour.getAttribute("name");
 	}
 	
 	}

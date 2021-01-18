@@ -15,14 +15,7 @@
 	
 	public class LoginTest {
 
-		 CartPage cartPage;
-		 TermPage termPage;
-		 ConfirmationPage confirmationPage;
 		 LaunchPage LaunchPage1;
-		 Payment paymentPage;
-		 ProceedPage proceedPage;
-		 SearchItemPage searchIteamPage;
-		 SelectItem selectItemPage;
 		 SignInPage SignPage1;
 		 VerifyingPage verifyingPage;
 		 TestContext testContext;
@@ -30,6 +23,7 @@
 		public LoginTest(TestContext context){
 
 		testContext=context;
+
 		}
 
 		@Given("^I naviagate to launch page of the application and click on login link field$")
