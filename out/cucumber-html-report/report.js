@@ -7,7 +7,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 8279162900,
+  "duration": 8340160101,
   "status": "passed"
 });
 formatter.scenario({
@@ -68,7 +68,7 @@ formatter.match({
   "location": "SearchTest.user_login_into_application()"
 });
 formatter.result({
-  "duration": 14748688300,
+  "duration": 18168645501,
   "status": "passed"
 });
 formatter.match({
@@ -81,53 +81,53 @@ formatter.match({
   "location": "SearchTest.user_search_a(String)"
 });
 formatter.result({
-  "duration": 7540699500,
+  "duration": 6589179601,
   "status": "passed"
 });
 formatter.match({
   "location": "SearchTest.user_click_on_the_add_item_to_cart_field()"
 });
 formatter.result({
-  "duration": 6353158900,
+  "duration": 4809145100,
   "status": "passed"
 });
 formatter.match({
   "location": "SearchTest.user_click_on_the_proceed_to_checkout_field()"
 });
 formatter.result({
-  "duration": 5166971700,
+  "duration": 6695146300,
   "status": "passed"
 });
 formatter.match({
   "location": "SearchTest.user_click_on_agree_term_and_proceed_to_checkout_field()"
 });
 formatter.result({
-  "duration": 3757234300,
+  "duration": 1992616900,
   "status": "passed"
 });
 formatter.match({
   "location": "SearchTest.user_add_payment_method()"
 });
 formatter.result({
-  "duration": 2354852501,
+  "duration": 3533468200,
   "status": "passed"
 });
 formatter.match({
   "location": "SearchTest.user_click_on_the_confirm_order()"
 });
 formatter.result({
-  "duration": 5397974899,
+  "duration": 5770805300,
   "status": "passed"
 });
 formatter.match({
   "location": "SearchTest.user_should_be_able_to_place_order_of_the_product()"
 });
 formatter.result({
-  "duration": 30013563700,
+  "duration": 3010200,
   "status": "passed"
 });
 formatter.after({
-  "duration": 88001,
+  "duration": 730395199,
   "status": "passed"
 });
 });

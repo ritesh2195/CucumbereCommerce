@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="83.612395">
-<testcase classname="Searching Product and placing order" name="Searching Product with valid user credebtials" time="83.612395">
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="56.632572">
+<testcase classname="Searching Product and placing order" name="Searching Product with valid user credebtials" time="56.632572">
 <system-out><![CDATA[Given user login into application...........................................passed
 And user search a "Product".................................................passed
 And user click on the add item to cart field................................passed

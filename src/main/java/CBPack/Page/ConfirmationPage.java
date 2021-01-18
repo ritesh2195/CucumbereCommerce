@@ -18,12 +18,14 @@
 	
 	}
 	
-	public void confirm() {
+	public String confirm() {
 
 	waitForElementToClickable(confirmOrder);
 		
 	confirmOrder.click();
+
+	return getPageTitle();
 		
 	}
-	
+
 	}

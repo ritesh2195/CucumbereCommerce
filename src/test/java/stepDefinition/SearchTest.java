@@ -23,6 +23,7 @@ public class SearchTest {
     TestContext testContext;
     static String cartPrice;
     static String finalPrice;
+    static String actualPageTitle;
 
     public SearchTest(TestContext context){
 
@@ -101,7 +102,7 @@ public class SearchTest {
 
     confirmationPage=testContext.getPageObjectManager().getConfirmationPage();
 
-    confirmationPage.confirm();
+    actualPageTitle = confirmationPage.confirm();
 
     }
 
@@ -109,6 +110,8 @@ public class SearchTest {
     public void user_should_be_able_to_place_order_of_the_product() {
 
     Assert.assertEquals(cartPrice,finalPrice);
+
+    Assert.assertEquals("Order confirmation - My Store",actualPageTitle);
 
     }
 
