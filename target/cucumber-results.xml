@@ -1,16 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="47.992916">
-<testcase classname="Testing Ecommerce" name="Login with valid credential" time="47.992916">
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="24.499023">
+<testcase classname="Testing Ecommerce" name="Login with valid credential" time="24.499023">
 <system-out><![CDATA[Given I naviagate to launch page of the application and click on login link field.passed
 When User enters the Username riteshranjanmishra938@gmail.com and Password mishra21 into the fields.passed
 Then user should be abale to succefully Login...............................passed
-Given I type item in the search box and click on the search button field....passed
-And I select the particular item and click on the particular item...........passed
-When I click on the add item to cart field..................................passed
-And I click on the proceed to checkout field................................passed
-Then I click on agree term and proceed to checkout field....................passed
-And I click on the payment field............................................passed
-Then I click on the confirm my order field..................................passed
 ]]></system-out>
 </testcase>
 </testsuite>

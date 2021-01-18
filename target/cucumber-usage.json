@@ -1,71 +1,17 @@
 [
   {
-    "source": "^I click on the proceed to checkout field$",
-    "steps": [
-      {
-        "name": "I click on the proceed to checkout field",
-        "aggregatedDurations": {
-          "average": 4.5424234,
-          "median": 4.5424234
-        },
-        "durations": [
-          {
-            "duration": 4.5424234,
-            "location": "login1.feature:10"
-          }
-        ]
-      }
-    ]
-  },
-  {
     "source": "^User enters the Username ([^\"]*) and Password ([^\"]*) into the fields$",
     "steps": [
       {
         "name": "User enters the Username riteshranjanmishra938@gmail.com and Password mishra21 into the fields",
         "aggregatedDurations": {
-          "average": 3.1995974,
-          "median": 3.1995974
+          "average": 2.810012201,
+          "median": 2.810012201
         },
         "durations": [
           {
-            "duration": 3.1995974,
-            "location": "login1.feature:5"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "^I type ([^\"]*) in the search box and click on the search button field$",
-    "steps": [
-      {
-        "name": "I type item in the search box and click on the search button field",
-        "aggregatedDurations": {
-          "average": 3.8930408,
-          "median": 3.8930408
-        },
-        "durations": [
-          {
-            "duration": 3.8930408,
-            "location": "login1.feature:7"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "^I select the particular item and click on the particular item$",
-    "steps": [
-      {
-        "name": "I select the particular item and click on the particular item",
-        "aggregatedDurations": {
-          "average": 3.0741032,
-          "median": 3.0741032
-        },
-        "durations": [
-          {
-            "duration": 3.0741032,
-            "location": "login1.feature:8"
+            "duration": 2.810012201,
+            "location": "Login.feature:5"
           }
         ]
       }
@@ -77,13 +23,13 @@
       {
         "name": "user should be abale to succefully Login",
         "aggregatedDurations": {
-          "average": 0.0972279,
-          "median": 0.0972279
+          "average": 0.107568001,
+          "median": 0.107568001
         },
         "durations": [
           {
-            "duration": 0.0972279,
-            "location": "login1.feature:6"
+            "duration": 0.107568001,
+            "location": "Login.feature:6"
           }
         ]
       }
@@ -95,85 +41,13 @@
       {
         "name": "I naviagate to launch page of the application and click on login link field",
         "aggregatedDurations": {
-          "average": 10.8546058,
-          "median": 10.8546058
+          "average": 12.7195938,
+          "median": 12.7195938
         },
         "durations": [
           {
-            "duration": 10.8546058,
-            "location": "login1.feature:4"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "^I click on the payment field$",
-    "steps": [
-      {
-        "name": "I click on the payment field",
-        "aggregatedDurations": {
-          "average": 1.5840556,
-          "median": 1.5840556
-        },
-        "durations": [
-          {
-            "duration": 1.5840556,
-            "location": "login1.feature:12"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "^I click on agree term and proceed to checkout field$",
-    "steps": [
-      {
-        "name": "I click on agree term and proceed to checkout field",
-        "aggregatedDurations": {
-          "average": 2.7918989,
-          "median": 2.7918989
-        },
-        "durations": [
-          {
-            "duration": 2.7918989,
-            "location": "login1.feature:11"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "^I click on the add item to cart field$",
-    "steps": [
-      {
-        "name": "I click on the add item to cart field",
-        "aggregatedDurations": {
-          "average": 4.1872916,
-          "median": 4.1872916
-        },
-        "durations": [
-          {
-            "duration": 4.1872916,
-            "location": "login1.feature:9"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "^I click on the confirm my order field$",
-    "steps": [
-      {
-        "name": "I click on the confirm my order field",
-        "aggregatedDurations": {
-          "average": 4.9020106,
-          "median": 4.9020106
-        },
-        "durations": [
-          {
-            "duration": 4.9020106,
-            "location": "login1.feature:13"
+            "duration": 12.7195938,
+            "location": "Login.feature:4"
           }
         ]
       }
