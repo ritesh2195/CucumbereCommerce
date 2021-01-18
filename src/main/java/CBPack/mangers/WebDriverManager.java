@@ -60,7 +60,9 @@ public class WebDriverManager {
 
             case CHROME:
 
-                System.setProperty(CHROME_DRIVER_PROPERTY,FileReaderManager.getInstance().getConfigReader().getDriverPath());
+                //System.setProperty(CHROME_DRIVER_PROPERTY,FileReaderManager.getInstance().getConfigReader().getDriverPath());
+
+                io.github.bonigarcia.wdm.WebDriverManager.chromedriver().setup();
 
                 driver=new ChromeDriver();
 

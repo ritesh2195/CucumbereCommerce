@@ -26,9 +26,9 @@ import cucumber.api.junit.Cucumber;
 
 		features= {"features"},
 
-		glue= {"stepDefinition"}
+		glue= {"stepDefinition"},
 
-		//tags= {"@Login"}
+		tags= {"@Login"}
 
 )
 public class runnerTest {

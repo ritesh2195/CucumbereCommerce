@@ -4,6 +4,7 @@
 	import CBPack.cucumber.TestContext;
 	import CBPack.mangers.PageObjectManager;
 	import CBPack.mangers.WebDriverManager;
+	import org.junit.Assert;
 	import org.openqa.selenium.JavascriptExecutor;
 	import org.openqa.selenium.WebDriver;
 	import CBPack.util.Constant;
@@ -24,10 +25,7 @@
 		 SelectItem selectItemPage;
 		 SignInPage SignPage1;
 		 VerifyingPage verifyingPage;
-		 PageObjectManager pageObjectManager;
-		WebDriverManager webDriverManager;
-		WebDriver driver;
-		TestContext testContext;
+		 TestContext testContext;
 
 		public login1(TestContext context){
 
@@ -49,29 +47,18 @@
 		SignPage1=testContext.getPageObjectManager().getSignPage();
 
 		SignPage1.DoSignin(Constant.USERNAME,Constant.PASSWORD );
-		
-		Thread.sleep(5000);
-			
+
 		}
 
-
 		@Then("^user should be abale to succefully Login$")
-		public void user_should_be_abale_to_succefully_Login() throws InterruptedException  {
+		public void user_should_be_abale_to_succefully_Login() {
 
 		verifyingPage=testContext.getPageObjectManager().getVerifyingPage();
 
-			boolean status = verifyingPage.verifyLogin();
+		boolean status = verifyingPage.verifyLogin();
 
-			if (status==true)
+		Assert.assertTrue(status);
 
-				assert true;
-
-			else
-
-				Assert.fail("Login Test is failed");
-
-		Thread.sleep(5000);
-		
 		}	
 		
 		@Given("^I type ([^\"]*) in the search box and click on the search button field$")
@@ -93,22 +80,13 @@
 		}
 		
 		@When("^I click on the add item to cart field$")
-		public void I_click_on_the_add_item_to_cart_field() throws InterruptedException {
+		public void I_click_on_the_add_item_to_cart_field() {
 
 		cartPage=testContext.getPageObjectManager().getCartPage();
 
-		try {
-			
 		cartPage.addCart();
-		
-		}catch(Exception e)	{
-			
-		e.printStackTrace();
-		
-		Thread.sleep(5000);
+
 		}
-		}
-		
 		@And("^I click on the proceed to checkout field$")
 		public void I_click_on_the_proceed_to_checkout_field() {
 
@@ -128,25 +106,21 @@
 		}
 		
 		@And("^I click on the payment field$")
-		public void I_click_on_the_payment_field() throws InterruptedException {
+		public void I_click_on_the_payment_field() {
 
 		paymentPage=testContext.getPageObjectManager().getPayment();
 
 		paymentPage.payment();
-		
-		Thread.sleep(10000);
-		
+
 		}
 		
 		@Then("^I click on the confirm my order field$")
-		public void I_click_on_the_confirm_my_order_field() throws InterruptedException {
+		public void I_click_on_the_confirm_my_order_field() {
 
 		confirmationPage=testContext.getPageObjectManager().getConfirmationPage();
 
 		confirmationPage.confirm();
-		
-		Thread.sleep(10000);
-			
+
 		}
 
 	}

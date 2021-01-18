@@ -15,6 +15,7 @@ public class PageObjectManager {
     private SearchItemPage searchIteamPage;
     private SelectItem selectItemPage;
     private SignInPage SignPage1;
+    private SignUpPage signUpPage;
     private VerifyingPage verifyingPage;
 
     public PageObjectManager(WebDriver driver){
@@ -63,6 +64,11 @@ public class PageObjectManager {
     public SignInPage getSignPage(){
 
         return (SignPage1==null) ? SignPage1 = new SignInPage(driver) : SignPage1;
+    }
+
+    public SignUpPage getSignUpPage(){
+
+        return (signUpPage==null) ? signUpPage = new SignUpPage(driver) : signUpPage;
     }
 
     public VerifyingPage getVerifyingPage(){

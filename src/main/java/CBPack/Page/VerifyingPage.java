@@ -6,7 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class VerifyingPage {
+public class VerifyingPage extends BasePage {
 
     WebDriver driver;
 
@@ -18,13 +18,15 @@ public class VerifyingPage {
 
     public VerifyingPage(WebDriver driver){
 
-        this.driver=driver;
+        super(driver);
 
         PageFactory.initElements(driver,this);
 
     }
 
     public boolean  verifyLogin(){
+
+        waitForElementVisible(loginElement);
 
         return (loginElement.isDisplayed());
 

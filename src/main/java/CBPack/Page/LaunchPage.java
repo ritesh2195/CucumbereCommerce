@@ -6,12 +6,10 @@
 	import org.openqa.selenium.support.FindBy;
 	import org.openqa.selenium.support.PageFactory;
 
-  public class LaunchPage  {
+  public class LaunchPage extends BasePage  {
 
   	ConfigFileReader configFileReader;
 
-	WebDriver driver;
-	
 	@FindBy(xpath="//*[text()='Contact us']")
 	private WebElement Contactus;
 	
@@ -25,31 +23,19 @@
 	private WebElement SubmitSearch;
 	
 	public LaunchPage(WebDriver driver) {
-		
-	this.driver=driver;	
-	
-	PageFactory.initElements(driver, this);
+		super(driver);
+
+		PageFactory.initElements(driver, this);
 
 	configFileReader = new ConfigFileReader();
 		
 	}
-//	  public void navigateTo_HomePage() {
-//
-//		driver.get(configFileReader.getApplicationUrl());
-//
-//	  }
+
 	public void SingInPage() {
 		
 	driver.get(configFileReader.getApplicationUrl());
 
-		try {
-
-			Thread.sleep(5000);
-
-		} catch (InterruptedException e) {
-
-			e.printStackTrace();
-		}
+		waitForElementToClickable(Signin);
 
 		Signin.click();
 		

@@ -5,10 +5,8 @@
 	import org.openqa.selenium.support.FindBy;
 	import org.openqa.selenium.support.PageFactory;
 
- public class Payment {
-		
-	WebDriver driver;
-		
+ public class Payment extends BasePage {
+
 		@FindBy(xpath="//*[text()='(order processing will be longer)']")
 		private WebElement PaymentOption1;
 		
@@ -16,10 +14,10 @@
 		private WebElement PaymentOption2;
 		
 		public Payment(WebDriver driver) {
-			
-		this.driver=driver;	
-		
-		PageFactory.initElements(driver, this);
+
+			super(driver);
+
+			PageFactory.initElements(driver, this);
 		
 		}
 		public void payment() {

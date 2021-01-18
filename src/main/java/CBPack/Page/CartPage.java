@@ -8,10 +8,8 @@
         import org.openqa.selenium.support.ui.ExpectedConditions;
 	import org.openqa.selenium.support.ui.WebDriverWait;
 	
-	public class CartPage {
-		
-	WebDriver driver;
-	
+	public class CartPage extends BasePage {
+
 	@FindBy(xpath="//*[text()='Add to cart']")
 	private WebElement addToCart;
 	
@@ -28,10 +26,10 @@
 	private WebElement ProceedToCheckout;
 	
 	public CartPage(WebDriver driver) {
-		
-	this.driver=driver;
-	
-	PageFactory.initElements(driver, this);
+
+		super(driver);
+
+		PageFactory.initElements(driver, this);
 	
 	}
 	
@@ -49,9 +47,7 @@
 	
 	addToCart.click();
 	
-	WebDriverWait wait=new WebDriverWait(driver, 20);
-    
-   	wait.until(ExpectedConditions.elementToBeClickable(ProceedToCheckout));
+	waitForElementToClickable(ProceedToCheckout);
 	
 	ProceedToCheckout.click();
 	

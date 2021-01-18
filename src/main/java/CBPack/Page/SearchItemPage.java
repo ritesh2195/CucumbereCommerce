@@ -5,10 +5,8 @@
    import org.openqa.selenium.support.FindBy;
    import org.openqa.selenium.support.PageFactory;
 
- public class SearchItemPage {
-		
-	WebDriver driver;
-		
+ public class SearchItemPage extends BasePage {
+
 	@FindBy(id="search_query_top")
 	private WebElement Search;
 		
@@ -16,14 +14,16 @@
 	private WebElement SubmitSearch;
 	
 	public SearchItemPage(WebDriver driver) {
-		
-	this.driver=driver;	
-	
-	PageFactory.initElements(driver, this);
+
+		super(driver);
+
+		PageFactory.initElements(driver, this);
 		
 	}
 	
 	public void searchItem(String text) {
+
+	waitForElementVisible(Search);
 		
 	Search.sendKeys(text);
 	

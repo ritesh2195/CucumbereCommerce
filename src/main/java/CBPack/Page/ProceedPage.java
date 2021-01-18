@@ -5,10 +5,8 @@
 	import org.openqa.selenium.support.FindBy;
 	import org.openqa.selenium.support.PageFactory;
 
- public class ProceedPage {
-		
-	WebDriver driver;
-	
+ public class ProceedPage extends BasePage {
+
 	@FindBy(className="standard-checkout")
 	private WebElement proceedCheckout1;
 	
@@ -16,15 +14,19 @@
 	private WebElement proceedCheckout2;
 	
 	public ProceedPage(WebDriver driver) {
-		
-	this.driver=driver;	
-	
-	PageFactory.initElements(driver, this);
+
+		super(driver);
+
+		PageFactory.initElements(driver, this);
 	
 	}
 	public void proceedCheckout() {
+
+	waitForElementToClickable(proceedCheckout1);
 		
 	proceedCheckout1.click();
+
+	waitForElementToClickable(proceedCheckout2);
 	
 	proceedCheckout2.click();
 		

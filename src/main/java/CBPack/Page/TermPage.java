@@ -5,10 +5,8 @@
 	import org.openqa.selenium.support.FindBy;
 	import org.openqa.selenium.support.PageFactory;
 
-	  public class TermPage {
-	
-		WebDriver driver;
-		
+	  public class TermPage extends BasePage {
+
 		@FindBy(id="cgv")
 		private WebElement agreeTerm1;
 		
@@ -16,10 +14,10 @@
 		private WebElement proceedCheckout3;
 		
 		public TermPage(WebDriver driver) {
-			
-		this.driver=driver;	
-		
-		PageFactory.initElements(driver, this);
+
+			super(driver);
+
+			PageFactory.initElements(driver, this);
 		
 		}
 		public void agreeTerm1() {

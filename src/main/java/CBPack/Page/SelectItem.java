@@ -5,10 +5,8 @@
      import org.openqa.selenium.support.FindBy;
 	 import org.openqa.selenium.support.PageFactory;
 
- public class SelectItem {
-	
-	WebDriver driver;	
-		
+ public class SelectItem extends BasePage {
+
 	@FindBy(xpath="//*[@title='Printed Summer Dress']")
 	private WebElement PrintedSummerDress;
 	
@@ -22,10 +20,10 @@
 	private WebElement PrintedChiffonDress;
 	
 	public SelectItem(WebDriver driver) {
-		
-	this.driver=driver;
-	
-	PageFactory.initElements(driver, this);
+
+		super(driver);
+
+		PageFactory.initElements(driver, this);
 	
 	}
 	
