@@ -2,7 +2,7 @@
 	
 	public class Constant {
 	
-public static final String APP_URL="http://automationpractice.com/index.php";
+		public static final String APP_URL="http://automationpractice.com/index.php";
 		
 		public static final String BROWSER_TYPE = "chrome";
 		

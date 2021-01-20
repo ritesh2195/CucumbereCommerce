@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="56.632572">
-<testcase classname="Searching Product and placing order" name="Searching Product with valid user credebtials" time="56.632572">
-<system-out><![CDATA[Given user login into application...........................................passed
-And user search a "Product".................................................passed
-And user click on the add item to cart field................................passed
-And user click on the proceed to checkout field.............................passed
-And user click on agree term and proceed to checkout field..................passed
-And user add payment method.................................................passed
-When user click on the confirm order........................................passed
-Then user should be able to place order of the product......................passed
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="38.889814">
+<testcase classname="SignUp for New User" name="sign up for valid credential" time="38.889814">
+<system-out><![CDATA[Given user navigate application url.........................................passed
+And user enter email id.....................................................passed
+And user enter his personal information.....................................passed
+And user enter valid address................................................passed
+When user click on register button..........................................passed
+Then user should be abale to succefully Register............................passed
 ]]></system-out>
 </testcase>
 </testsuite>

@@ -1,143 +1,107 @@
 [
   {
-    "source": "^user click on the confirm order$",
+    "source": "^user click on register button$",
     "steps": [
       {
-        "name": "user click on the confirm order",
+        "name": "user click on register button",
         "aggregatedDurations": {
-          "average": 5.7708053,
-          "median": 5.7708053
+          "average": 4.7997369,
+          "median": 4.7997369
         },
         "durations": [
           {
-            "duration": 5.7708053,
-            "location": "Search.feature:12"
+            "duration": 4.7997369,
+            "location": "signUp.feature:10"
           }
         ]
       }
     ]
   },
   {
-    "source": "^user add payment method$",
+    "source": "^user enter his personal information$",
     "steps": [
       {
-        "name": "user add payment method",
+        "name": "user enter his personal information",
         "aggregatedDurations": {
-          "average": 3.5334682,
-          "median": 3.5334682
+          "average": 4.754767,
+          "median": 4.754767
         },
         "durations": [
           {
-            "duration": 3.5334682,
-            "location": "Search.feature:11"
+            "duration": 4.754767,
+            "location": "signUp.feature:8"
           }
         ]
       }
     ]
   },
   {
-    "source": "^user login into application$",
+    "source": "^user should be abale to succefully Register$",
     "steps": [
       {
-        "name": "user login into application",
+        "name": "user should be abale to succefully Register",
         "aggregatedDurations": {
-          "average": 18.168645501,
-          "median": 18.168645501
+          "average": 0.0580999,
+          "median": 0.0580999
         },
         "durations": [
           {
-            "duration": 18.168645501,
-            "location": "Search.feature:6"
+            "duration": 0.0580999,
+            "location": "signUp.feature:11"
           }
         ]
       }
     ]
   },
   {
-    "source": "^user click on agree term and proceed to checkout field$",
+    "source": "^user enter valid address$",
     "steps": [
       {
-        "name": "user click on agree term and proceed to checkout field",
+        "name": "user enter valid address",
         "aggregatedDurations": {
-          "average": 1.9926169,
-          "median": 1.9926169
+          "average": 1.328446,
+          "median": 1.328446
         },
         "durations": [
           {
-            "duration": 1.9926169,
-            "location": "Search.feature:10"
+            "duration": 1.328446,
+            "location": "signUp.feature:9"
           }
         ]
       }
     ]
   },
   {
-    "source": "^user click on the proceed to checkout field$",
+    "source": "^user enter email id$",
     "steps": [
       {
-        "name": "user click on the proceed to checkout field",
+        "name": "user enter email id",
         "aggregatedDurations": {
-          "average": 6.6951463,
-          "median": 6.6951463
+          "average": 0.4870802,
+          "median": 0.4870802
         },
         "durations": [
           {
-            "duration": 6.6951463,
-            "location": "Search.feature:9"
+            "duration": 0.4870802,
+            "location": "signUp.feature:7"
           }
         ]
       }
     ]
   },
   {
-    "source": "^user should be able to place order of the product$",
+    "source": "^user navigate application url$",
     "steps": [
       {
-        "name": "user should be able to place order of the product",
+        "name": "user navigate application url",
         "aggregatedDurations": {
-          "average": 0.0030102,
-          "median": 0.0030102
+          "average": 15.8171961,
+          "median": 15.8171961
         },
         "durations": [
           {
-            "duration": 0.0030102,
-            "location": "Search.feature:13"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "^user search a \"([^\"]*)\"$",
-    "steps": [
-      {
-        "name": "user search a \"Product\"",
-        "aggregatedDurations": {
-          "average": 6.589179601,
-          "median": 6.589179601
-        },
-        "durations": [
-          {
-            "duration": 6.589179601,
-            "location": "Search.feature:7"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "^user click on the add item to cart field$",
-    "steps": [
-      {
-        "name": "user click on the add item to cart field",
-        "aggregatedDurations": {
-          "average": 4.8091451,
-          "median": 4.8091451
-        },
-        "durations": [
-          {
-            "duration": 4.8091451,
-            "location": "Search.feature:8"
+            "duration": 15.8171961,
+            "location": "signUp.feature:6"
           }
         ]
       }

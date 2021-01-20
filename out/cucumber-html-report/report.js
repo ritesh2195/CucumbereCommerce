@@ -1,133 +1,103 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("Search.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("signUp.feature");
 formatter.feature({
   "line": 1,
-  "name": "Searching Product and placing order",
+  "name": "SignUp for New User",
   "description": "",
-  "id": "searching-product-and-placing-order",
+  "id": "signup-for-new-user",
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 8340160101,
+  "duration": 10897237100,
   "status": "passed"
 });
 formatter.scenario({
   "line": 4,
-  "name": "Searching Product with valid user credebtials",
+  "name": "sign up for valid credential",
   "description": "",
-  "id": "searching-product-and-placing-order;searching-product-with-valid-user-credebtials",
+  "id": "signup-for-new-user;sign-up-for-valid-credential",
   "type": "scenario",
   "keyword": "Scenario",
   "tags": [
     {
       "line": 3,
-      "name": "@search"
+      "name": "@SignUp"
     }
   ]
 });
 formatter.step({
   "line": 6,
-  "name": "user login into application",
+  "name": "user navigate application url",
   "keyword": "Given "
 });
 formatter.step({
   "line": 7,
-  "name": "user search a \"Product\"",
+  "name": "user enter email id",
   "keyword": "And "
 });
 formatter.step({
   "line": 8,
-  "name": "user click on the add item to cart field",
+  "name": "user enter his personal information",
   "keyword": "And "
 });
 formatter.step({
   "line": 9,
-  "name": "user click on the proceed to checkout field",
+  "name": "user enter valid address",
   "keyword": "And "
 });
 formatter.step({
   "line": 10,
-  "name": "user click on agree term and proceed to checkout field",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 11,
-  "name": "user add payment method",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 12,
-  "name": "user click on the confirm order",
+  "name": "user click on register button",
   "keyword": "When "
 });
 formatter.step({
-  "line": 13,
-  "name": "user should be able to place order of the product",
+  "line": 11,
+  "name": "user should be abale to succefully Register",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "SearchTest.user_login_into_application()"
+  "location": "SignUpTest.user_navigate_application_url()"
 });
 formatter.result({
-  "duration": 18168645501,
+  "duration": 15817196100,
   "status": "passed"
 });
 formatter.match({
-  "arguments": [
-    {
-      "val": "Product",
-      "offset": 15
-    }
-  ],
-  "location": "SearchTest.user_search_a(String)"
+  "location": "SignUpTest.user_enter_email_id()"
 });
 formatter.result({
-  "duration": 6589179601,
+  "duration": 487080200,
   "status": "passed"
 });
 formatter.match({
-  "location": "SearchTest.user_click_on_the_add_item_to_cart_field()"
+  "location": "SignUpTest.user_enter_his_personal_information()"
 });
 formatter.result({
-  "duration": 4809145100,
+  "duration": 4754767000,
   "status": "passed"
 });
 formatter.match({
-  "location": "SearchTest.user_click_on_the_proceed_to_checkout_field()"
+  "location": "SignUpTest.user_enter_valid_address()"
 });
 formatter.result({
-  "duration": 6695146300,
+  "duration": 1328446000,
   "status": "passed"
 });
 formatter.match({
-  "location": "SearchTest.user_click_on_agree_term_and_proceed_to_checkout_field()"
+  "location": "SignUpTest.user_click_on_register_button()"
 });
 formatter.result({
-  "duration": 1992616900,
+  "duration": 4799736900,
   "status": "passed"
 });
 formatter.match({
-  "location": "SearchTest.user_add_payment_method()"
+  "location": "SignUpTest.user_should_be_abale_to_succefully_Register()"
 });
 formatter.result({
-  "duration": 3533468200,
-  "status": "passed"
-});
-formatter.match({
-  "location": "SearchTest.user_click_on_the_confirm_order()"
-});
-formatter.result({
-  "duration": 5770805300,
-  "status": "passed"
-});
-formatter.match({
-  "location": "SearchTest.user_should_be_able_to_place_order_of_the_product()"
-});
-formatter.result({
-  "duration": 3010200,
+  "duration": 58099900,
   "status": "passed"
 });
 formatter.after({
-  "duration": 730395199,
+  "duration": 747250700,
   "status": "passed"
 });
 });

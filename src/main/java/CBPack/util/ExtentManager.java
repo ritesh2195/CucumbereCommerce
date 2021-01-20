@@ -3,12 +3,10 @@ package CBPack.util;
 import java.io.File;
 import java.util.Date;
 
-import com.relevantcodes.extentreports.DisplayOrder;
-import com.relevantcodes.extentreports.ExtentReports;
 
 public class ExtentManager {
 	
-public static ExtentReports getInstance() {
+/*public static ExtentReports getInstance() {
 		
 		Date date = new Date();		
 		
@@ -29,6 +27,6 @@ public static ExtentReports getInstance() {
 		
 		return report;
 		
-	}
+	}*/
 
 }

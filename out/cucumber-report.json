@@ -6,7 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 8340160101,
+              "duration": 10897237100,
               "status": "passed"
             },
             "match": {
@@ -15,13 +15,13 @@
           }
         ],
         "line": 4,
-        "name": "Searching Product with valid user credebtials",
+        "name": "sign up for valid credential",
         "description": "",
-        "id": "searching-product-and-placing-order;searching-product-with-valid-user-credebtials",
+        "id": "signup-for-new-user;sign-up-for-valid-credential",
         "after": [
           {
             "result": {
-              "duration": 730395199,
+              "duration": 747250700,
               "status": "passed"
             },
             "match": {
@@ -34,103 +34,73 @@
         "steps": [
           {
             "result": {
-              "duration": 18168645501,
+              "duration": 15817196100,
               "status": "passed"
             },
             "line": 6,
-            "name": "user login into application",
+            "name": "user navigate application url",
             "match": {
-              "location": "SearchTest.user_login_into_application()"
+              "location": "SignUpTest.user_navigate_application_url()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 6589179601,
+              "duration": 487080200,
               "status": "passed"
             },
             "line": 7,
-            "name": "user search a \"Product\"",
+            "name": "user enter email id",
             "match": {
-              "arguments": [
-                {
-                  "val": "Product",
-                  "offset": 15
-                }
-              ],
-              "location": "SearchTest.user_search_a(String)"
+              "location": "SignUpTest.user_enter_email_id()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 4809145100,
+              "duration": 4754767000,
               "status": "passed"
             },
             "line": 8,
-            "name": "user click on the add item to cart field",
+            "name": "user enter his personal information",
             "match": {
-              "location": "SearchTest.user_click_on_the_add_item_to_cart_field()"
+              "location": "SignUpTest.user_enter_his_personal_information()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 6695146300,
+              "duration": 1328446000,
               "status": "passed"
             },
             "line": 9,
-            "name": "user click on the proceed to checkout field",
+            "name": "user enter valid address",
             "match": {
-              "location": "SearchTest.user_click_on_the_proceed_to_checkout_field()"
+              "location": "SignUpTest.user_enter_valid_address()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 1992616900,
+              "duration": 4799736900,
               "status": "passed"
             },
             "line": 10,
-            "name": "user click on agree term and proceed to checkout field",
+            "name": "user click on register button",
             "match": {
-              "location": "SearchTest.user_click_on_agree_term_and_proceed_to_checkout_field()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 3533468200,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "user add payment method",
-            "match": {
-              "location": "SearchTest.user_add_payment_method()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 5770805300,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "user click on the confirm order",
-            "match": {
-              "location": "SearchTest.user_click_on_the_confirm_order()"
+              "location": "SignUpTest.user_click_on_register_button()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 3010200,
+              "duration": 58099900,
               "status": "passed"
             },
-            "line": 13,
-            "name": "user should be able to place order of the product",
+            "line": 11,
+            "name": "user should be abale to succefully Register",
             "match": {
-              "location": "SearchTest.user_should_be_able_to_place_order_of_the_product()"
+              "location": "SignUpTest.user_should_be_abale_to_succefully_Register()"
             },
             "keyword": "Then "
           }
@@ -138,15 +108,15 @@
         "tags": [
           {
             "line": 3,
-            "name": "@search"
+            "name": "@SignUp"
           }
         ]
       }
     ],
-    "name": "Searching Product and placing order",
+    "name": "SignUp for New User",
     "description": "",
-    "id": "searching-product-and-placing-order",
+    "id": "signup-for-new-user",
     "keyword": "Feature",
-    "uri": "Search.feature"
+    "uri": "signUp.feature"
   }
 ]

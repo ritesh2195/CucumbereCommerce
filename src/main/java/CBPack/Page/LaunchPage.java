@@ -1,6 +1,7 @@
   package CBPack.Page;
 
 	import CBPack.dataProviders.ConfigFileReader;
+	import CBPack.mangers.FileReaderManager;
 	import org.openqa.selenium.WebDriver;
 	import org.openqa.selenium.WebElement;
 	import org.openqa.selenium.support.FindBy;
@@ -27,17 +28,17 @@
 
 		PageFactory.initElements(driver, this);
 
-	configFileReader = new ConfigFileReader();
-		
 	}
 
 	public void SingInPage() {
-		
-	driver.get(configFileReader.getApplicationUrl());
 
-		waitForElementToClickable(Signin);
+	String url = FileReaderManager.getInstance().getConfigReader().getApplicationUrl();
 
-		Signin.click();
+	driver.get(url);
+
+	waitForElementToClickable(Signin);
+
+	Signin.click();
 		
 	}
 		
