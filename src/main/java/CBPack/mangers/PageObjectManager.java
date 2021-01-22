@@ -17,6 +17,7 @@ public class PageObjectManager {
     private SignInPage SignPage1;
     private SignUpPage signUpPage;
     private VerifyingPage verifyingPage;
+    private ContactUs contactUs;
 
     public PageObjectManager(WebDriver driver){
 
@@ -74,5 +75,10 @@ public class PageObjectManager {
     public VerifyingPage getVerifyingPage(){
 
         return (verifyingPage==null) ? verifyingPage=new VerifyingPage(driver) : verifyingPage;
+    }
+
+    public ContactUs getContactUs(){
+
+        return (contactUs==null) ? contactUs = new ContactUs(driver) : contactUs;
     }
 }

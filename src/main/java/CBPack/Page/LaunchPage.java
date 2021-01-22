@@ -41,5 +41,17 @@
 	Signin.click();
 		
 	}
+
+	public void getContactUsPage(){
+
+		String url = FileReaderManager.getInstance().getConfigReader().getApplicationUrl();
+
+		driver.get(url);
+
+		waitForElementToClickable(Contactus);
+
+		Contactus.click();
+
+	}
 		
 	}

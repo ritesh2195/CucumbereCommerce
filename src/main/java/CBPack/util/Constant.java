@@ -12,6 +12,10 @@
 		
 		public static final String Search_Box = "Dress";
 		
-		public static final String FIREFOX_DRIVER = "drivers//geckodriver.exe";	
+		public static final String FIREFOX_DRIVER = "drivers//geckodriver.exe";
+
+		public static final String orderReference = "MRTCQTWZW";
+
+		public static final String message = "I am not getting my order";
 		
 	}
