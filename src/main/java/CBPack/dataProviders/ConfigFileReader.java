@@ -79,6 +79,15 @@ public class ConfigFileReader {
         else throw new RuntimeException("url not specified in the Configuration.properties file.");
     }
 
+    public String getRemoteUrl(){
+
+        String remoteUrl = properties.getProperty("remote_url");
+
+        if (remoteUrl!=null) return remoteUrl;
+
+        else throw new RuntimeException("url not specified in the Configuration.properties file.");
+    }
+
     public DriverType getBrowser() {
 
         String browserName = properties.getProperty("browser");

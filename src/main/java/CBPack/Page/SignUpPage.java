@@ -17,7 +17,7 @@ public class SignUpPage extends BasePage {
     @FindBy(css = "#SubmitCreate")
     private WebElement submit;
 
-    @FindBy(id = "id_gender1")
+    @FindBy(css = "#id_gender1")
     private WebElement Title_Mr;
 
     @FindBy(id = "id_gender2")
@@ -102,7 +102,9 @@ public class SignUpPage extends BasePage {
 
     public void setTitle(String gender){
 
-     if (gender=="Male"){
+     if (gender.equalsIgnoreCase("Male")){
+
+         waitForElementToClickable(Title_Mr);
 
          Title_Mr.click();
      }

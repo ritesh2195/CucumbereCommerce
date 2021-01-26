@@ -84,7 +84,7 @@ public class WebDriverManager {
 
         try {
 
-            driver = new RemoteWebDriver(new URL("https://ondemand.us-west-1.saucelabs.com:443/wd/hub"),cap);
+            driver = new RemoteWebDriver(new URL(FileReaderManager.getInstance().getConfigReader().getRemoteUrl()),cap);
 
 
         } catch (MalformedURLException e) {
@@ -102,8 +102,6 @@ public class WebDriverManager {
 
             case CHROME:
 
-                //System.setProperty(CHROME_DRIVER_PROPERTY,FileReaderManager.getInstance().getConfigReader().getDriverPath());
-
                 io.github.bonigarcia.wdm.WebDriverManager.chromedriver().setup();
 
                 driver=new ChromeDriver();
@@ -112,7 +110,7 @@ public class WebDriverManager {
 
             case FIREFOX:
 
-              System.setProperty(FIREFOX_DRIVER_PROPERTY,"drivers//geckodriver.exe");
+              io.github.bonigarcia.wdm.WebDriverManager.firefoxdriver().setup();
 
               driver=new FirefoxDriver();
 
