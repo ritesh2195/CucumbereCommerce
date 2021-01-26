@@ -2,10 +2,17 @@ package CBPack.mangers;
 
 import CBPack.enums.DriverType;
 import CBPack.enums.EnvironmentType;
+import CBPack.util.MutableUtilities;
+import org.openqa.selenium.MutableCapabilities;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 
+import java.lang.reflect.Method;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
 public class WebDriverManager {
@@ -51,7 +58,42 @@ public class WebDriverManager {
 
     private WebDriver createRemoteDriver() {
 
-        throw new RuntimeException("Remote Driver is not implemented yet");
+        MutableCapabilities mc = MutableUtilities.mutableUtility();
+
+        DesiredCapabilities cap = new DesiredCapabilities();
+
+        cap.setCapability("sauce:options",mc);
+
+        //cap.setCapability("browserVersion", versionName);
+
+        cap.setCapability("platformName", "windows 10");
+
+        if (driverType.toString().equalsIgnoreCase("chrome")){
+
+            io.github.bonigarcia.wdm.WebDriverManager.chromedriver().setup();
+
+            cap.setCapability("browserName","chrome");
+        }
+
+        else if (driverType.toString().equalsIgnoreCase("firefox")){
+
+            io.github.bonigarcia.wdm.WebDriverManager.firefoxdriver().setup();
+
+            cap.setCapability("browserName","firefox");
+        }
+
+        try {
+
+            driver = new RemoteWebDriver(new URL("https://ondemand.us-west-1.saucelabs.com:443/wd/hub"),cap);
+
+
+        } catch (MalformedURLException e) {
+
+            e.printStackTrace();
+
+        }
+
+        return driver;
     }
 
     private WebDriver createLocalDriver() {

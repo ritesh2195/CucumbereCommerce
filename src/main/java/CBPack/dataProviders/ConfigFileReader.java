@@ -98,7 +98,7 @@ public class ConfigFileReader {
 
         if(environmentName == null || environmentName.equalsIgnoreCase("local")) return EnvironmentType.LOCAL;
 
-        else if(environmentName.equals("remote")) return EnvironmentType.REMOTE;
+        else if(environmentName.equals("REMOTE")) return EnvironmentType.REMOTE;
 
         else throw new RuntimeException("Environment Type Key value in Configuration.properties is not matched : " + environmentName);
     }
