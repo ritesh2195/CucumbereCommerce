@@ -14,9 +14,9 @@ public class MutableUtilities {
 
         mc.setCapability("seleniumVersion","3.141.59");
 
-        mc.setCapability("username","rrm21995");
+        mc.setCapability("username","your userName");
 
-        mc.setCapability("accessKey","bc904297891e4100b26e9210e35bba31");
+        mc.setCapability("accessKey","access key");
 
         mc.setCapability("tags", "w3c-chrome-tests");
 
