@@ -27,7 +27,7 @@
 
 		LaunchPage1=testContext.getPageObjectManager().getLaunchPage();
 
-	    LaunchPage1.SingInPage();
+	        LaunchPage1.SingInPage();
 
 		}
 		
