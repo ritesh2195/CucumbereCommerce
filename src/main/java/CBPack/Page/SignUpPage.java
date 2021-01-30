@@ -83,6 +83,18 @@ public class SignUpPage extends BasePage {
     @FindBy(id = "submitAccount")
     private WebElement Register;
 
+    @FindBy(css = "#center_column h1")
+    private WebElement SignUpElement;
+
+    @FindBy(xpath = "//span[text()='My personal information']")
+    private WebElement PersonalInfo;
+
+    @FindBy(css = "#email")
+    private WebElement SignUpEmail;
+
+    @FindBy(css = ".info-account")
+    private WebElement SignUpMessage;
+
     public SignUpPage(WebDriver driver){
 
         super(driver);
@@ -218,5 +230,29 @@ public class SignUpPage extends BasePage {
     public void clickSubmit(){
 
         Register.click();
+    }
+
+    public String  verifySignUpTitle(){
+
+        waitForElementVisible(SignUpElement);
+
+        return SignUpElement.getText();
+
+    }
+
+    public String verifySognUpMessage(){
+
+        return SignUpMessage.getText();
+    }
+
+    public String getSignUpEmail(){
+
+        waitForElementToClickable(PersonalInfo);
+
+        PersonalInfo.click();
+
+        waitForElementToClickable(SignUpEmail);
+
+        return SignUpEmail.getAttribute("value");
     }
 }

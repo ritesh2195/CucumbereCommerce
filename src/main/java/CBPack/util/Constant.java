@@ -6,9 +6,9 @@
 		
 		public static final String BROWSER_TYPE = "chrome";
 		
-		public static final String USERNAME = "riteshranjanmishra938@gmail.com";
+		public static final String USERNAME = "rrm@gmail.com";
 		
-		public static final String PASSWORD = "reyansh";
+		public static final String PASSWORD = "qwerty";
 		
 		public static final String Search_Box = "Dress";
 		

@@ -1,4 +1,7 @@
-stepDefinition\Hooks.class
 Runner\runnerTest.class
-stepDefinition\login1.class
+stepDefinition\SearchTest.class
+stepDefinition\Hooks.class
+stepDefinition\SignUpTest.class
+stepDefinition\ContactUsTest.class
+stepDefinition\LoginTest.class
 Base\base.class

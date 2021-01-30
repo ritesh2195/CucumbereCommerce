@@ -15,6 +15,18 @@
 	
 	@FindBy(id="SubmitLogin")
 	private WebElement SubmitButton;
+
+	@FindBy(css = "#center_column h1")
+	private WebElement loginElement;
+
+	@FindBy(xpath = "//span[text()='My personal information']")
+	private WebElement PersonalInfo;
+
+	@FindBy(css = "#email")
+	private WebElement email;
+
+	@FindBy(css = ".info-account")
+	private WebElement loginMessage;
 	
 	public SignInPage(WebDriver driver) {
 
@@ -33,5 +45,29 @@
 	SubmitButton.click();
 
 	}
+
+	 public String  verifyLoginTitle(){
+
+	 waitForElementVisible(loginElement);
+
+	 return loginElement.getText();
+
+	 }
+
+	 public String verifyLoginMessage(){
+
+		return loginMessage.getText();
+	 }
+
+	 public String getLoginEmail(){
+
+		waitForElementToClickable(PersonalInfo);
+
+		PersonalInfo.click();
+
+		waitForElementToClickable(email);
+
+		return email.getAttribute("value");
+	 }
 	
 	}

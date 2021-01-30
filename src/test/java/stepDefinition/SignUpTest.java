@@ -23,6 +23,7 @@ public class SignUpTest {
     WebDriver driver;
     TestContext testContext;
     VerifyingPage verifyingPage;
+    static String expectedEmail = RandomDataGenerator.generateEmail();
 
     public SignUpTest(TestContext context){
 
@@ -45,7 +46,7 @@ public class SignUpTest {
 
      signUpPage = pageObjectManager.getSignUpPage();
 
-     signUpPage.setEmail(RandomDataGenerator.generateEmail());
+     signUpPage.setEmail(expectedEmail);
 
     }
 
@@ -58,7 +59,7 @@ public class SignUpTest {
 
       signUpPage.setCustomer_lastName(RandomDataGenerator.generateLastName());
 
-      signUpPage.setEmail_id(RandomDataGenerator.generateEmail());
+      //signUpPage.setEmail_id(RandomDataGenerator.generateEmail());
 
       signUpPage.setPassword(RandomDataGenerator.generatePassword());
 
@@ -99,11 +100,15 @@ public class SignUpTest {
     @Then("^user should be abale to succefully Register$")
     public void user_should_be_abale_to_succefully_Register()  {
 
-     verifyingPage = pageObjectManager.getVerifyingPage();
+     String title = signUpPage.verifySignUpTitle();
 
-     String text = verifyingPage.validateSignUpTest();
+     String msg = signUpPage.verifySognUpMessage();
 
-     Assert.assertEquals(text,"Welcome to your account. Here you can manage all of your personal information and orders.");
+     String actualEmail = signUpPage.getSignUpEmail();
+
+     Assert.assertEquals("Welcome to your account. Here you can manage all of your personal information and orders.", msg);
+
+     Assert.assertEquals(expectedEmail.toLowerCase(),actualEmail.toLowerCase());
 
 
     }

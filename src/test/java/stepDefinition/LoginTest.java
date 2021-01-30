@@ -12,7 +12,7 @@
 	public class LoginTest {
 
 		 LaunchPage LaunchPage1;
-		 SignInPage SignPage1;
+		 SignInPage signInPage;
 		 VerifyingPage verifyingPage;
 		 TestContext testContext;
 
@@ -34,9 +34,9 @@
 		@When("^User enters the Username ([^\"]*) and Password ([^\"]*) into the fields$")
 		public void user_enters_the_Username_and_Password_into_the_fields(String username, String password) throws InterruptedException {
 
-		SignPage1=testContext.getPageObjectManager().getSignPage();
+		signInPage=testContext.getPageObjectManager().getSignPage();
 
-		SignPage1.DoSignin(Constant.USERNAME,Constant.PASSWORD );
+		signInPage.DoSignin(Constant.USERNAME,Constant.PASSWORD );
 
 		}
 
@@ -45,9 +45,17 @@
 
 		verifyingPage=testContext.getPageObjectManager().getVerifyingPage();
 
-		boolean status = verifyingPage.verifyLogin();
+		String title = signInPage.verifyLoginTitle();
 
-		Assert.assertTrue(status);
+		String message = signInPage.verifyLoginMessage();
+
+		String email = signInPage.getLoginEmail();
+
+		Assert.assertEquals("MY ACCOUNT", title);
+
+		Assert.assertEquals("Welcome to your account. Here you can manage all of your personal information and orders.", message);
+
+		Assert.assertEquals(Constant.USERNAME, email);
 
 		}	
 

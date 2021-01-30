@@ -9,7 +9,7 @@ public class VerifyingPage extends BasePage {
 
     WebDriver driver;
 
-    @FindBy(xpath = "//*[text()='My account']")
+    @FindBy(css = "#center_column h1")
     private WebElement loginElement;
     
     @FindBy(xpath = "//div[@id='center_column']//p")
@@ -23,11 +23,11 @@ public class VerifyingPage extends BasePage {
 
     }
 
-    public boolean  verifyLogin(){
+    public String  verifyLogin(){
 
-        waitForElementVisible(loginElement);
+        //waitForElementVisible(loginElement);
 
-        return (loginElement.isDisplayed());
+        return loginElement.getText();
 
     }
     

@@ -12,7 +12,7 @@ import org.junit.runner.RunWith;
 
 		glue= {"stepDefinition"},
 
-		tags= "@search"
+		tags= "@SignUp"
 
 )
 public class runnerTest {
