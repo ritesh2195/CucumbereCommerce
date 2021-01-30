@@ -6,6 +6,12 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <serenity.version>2.3.10</serenity.version>
+        <serenity.maven.version>2.3.10</serenity.maven.version>
+        <serenity.cucumber.version>2.3.10</serenity.cucumber.version>
+        <encoding>UTF-8</encoding>
+        <tags></tags>
+        <webdriver.base.url></webdriver.base.url>
     </properties>
 
     <dependencies>
@@ -69,7 +75,6 @@
             <version>4.3.0</version>
         </dependency>
 
-
     </dependencies>
 
     <build>
@@ -82,6 +87,8 @@
                     <source>1.8</source>
                     <target>1.8</target>
                     <encoding>UTF-8</encoding>
+                    <fork>true</fork>
+                    <executable>C:\Program Files\Java\jdk1.8.0_241\bin\javac.exe</executable>
                 </configuration>
             </plugin>
 
