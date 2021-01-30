@@ -49,11 +49,11 @@
 
 		String message = signInPage.verifyLoginMessage();
 
-		String email = signInPage.getLoginEmail();
-
 		Assert.assertEquals("MY ACCOUNT", title);
 
 		Assert.assertEquals("Welcome to your account. Here you can manage all of your personal information and orders.", message);
+
+		String email = signInPage.getLoginEmail();
 
 		Assert.assertEquals(Constant.USERNAME, email);
 
