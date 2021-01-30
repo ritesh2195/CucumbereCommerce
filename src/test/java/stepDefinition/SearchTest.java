@@ -24,6 +24,8 @@ public class SearchTest {
     static String cartPrice;
     static String finalPrice;
     static String actualPageTitle;
+    static String selectedItem;
+    static String cartItem;
 
     public SearchTest(TestContext context){
 
@@ -53,6 +55,8 @@ public class SearchTest {
 
     selectItemPage=testContext.getPageObjectManager().getSelectItemPage();
 
+    selectedItem = selectItemPage.getSelectedProductName();
+
     selectItemPage.choosingItem();
 
     }
@@ -61,6 +65,8 @@ public class SearchTest {
     public void user_click_on_the_add_item_to_cart_field() {
 
     cartPage=testContext.getPageObjectManager().getCartPage();
+
+    cartItem = cartPage.getCartProductName();
 
     cartPrice = cartPage.getCartPrice();
 
@@ -110,6 +116,8 @@ public class SearchTest {
     public void user_should_be_able_to_place_order_of_the_product() {
 
     Assert.assertEquals(cartPrice,finalPrice);
+
+    Assert.assertEquals(selectedItem, cartItem);
 
     Assert.assertEquals("Order confirmation - My Store",actualPageTitle);
 

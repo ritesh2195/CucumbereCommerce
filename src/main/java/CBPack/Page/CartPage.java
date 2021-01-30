@@ -22,11 +22,14 @@
 	@FindBy(id="group_1")
 	private WebElement Size;
 	
-	@FindBy(id="color_13")
+	@FindBy(id="color_15")
 	private WebElement Colour;
 	
 	@FindBy(xpath="//*[@title='Proceed to checkout']")
 	private WebElement ProceedToCheckout;
+
+	@FindBy(css = ".pb-center-column h1")
+	private WebElement CartProductName;
 	
 	public CartPage(WebDriver driver) {
 
@@ -59,6 +62,12 @@
 	public String getCartPrice(){
 
 		return PriceProduct.getText();
+	}
+
+	public String getCartProductName(){
+
+		return CartProductName.getText();
+
 	}
 
 	public String getProductColor(){
