@@ -16,26 +16,24 @@ import org.openqa.selenium.WebDriver;
 
 public class SignUpTest {
 
-    PageObjectManager pageObjectManager;
     SignUpPage signUpPage;
     LaunchPage launchPage;
-    WebDriverManager webDriverManager;
-    WebDriver driver;
     TestContext testContext;
-    VerifyingPage verifyingPage;
     static String expectedEmail = RandomDataGenerator.generateEmail();
 
     public SignUpTest(TestContext context){
 
         testContext=context;
+
+        launchPage = testContext.getPageObjectManager().getLaunchPage();
+
+        signUpPage = testContext.getPageObjectManager().getSignUpPage();
+
+
     }
 
     @Given("^user navigate application url$")
     public void user_navigate_application_url() {
-
-     pageObjectManager = testContext.getPageObjectManager();
-
-     launchPage= pageObjectManager.getLaunchPage();
 
      launchPage.SingInPage();
 
@@ -43,8 +41,6 @@ public class SignUpTest {
 
     @And("^user enter email id$")
     public void user_enter_email_id(){
-
-     signUpPage = pageObjectManager.getSignUpPage();
 
      signUpPage.setEmail(expectedEmail);
 
@@ -58,8 +54,6 @@ public class SignUpTest {
       signUpPage.setCustomer_firstName(RandomDataGenerator.generateFirstName());
 
       signUpPage.setCustomer_lastName(RandomDataGenerator.generateLastName());
-
-      //signUpPage.setEmail_id(RandomDataGenerator.generateEmail());
 
       signUpPage.setPassword(RandomDataGenerator.generatePassword());
 

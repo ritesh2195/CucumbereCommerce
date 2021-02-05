@@ -18,24 +18,24 @@ public class ContactUsTest {
 
     public ContactUsTest(TestContext context){
 
-        testContext = context;
+       testContext = context;
+
+       launchPage = testContext.getPageObjectManager().getLaunchPage();
+
+       contactUs = testContext.getPageObjectManager().getContactUs();
     }
 
     @Given("user is on contact us page")
     public void user_is_on_contact_us_page() {
 
-        launchPage = testContext.getPageObjectManager().getLaunchPage();
-
-        launchPage.getContactUsPage();
+      launchPage.getContactUsPage();
 
     }
 
     @Given("user choose subject heading")
     public void user_choose_subject_heading() {
 
-        contactUs = testContext.getPageObjectManager().getContactUs();
-
-        contactUs.setSubjectHeading();
+       contactUs.setSubjectHeading();
 
     }
 

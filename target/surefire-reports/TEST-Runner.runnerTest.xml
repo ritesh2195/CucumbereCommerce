@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="Runner.runnerTest" time="27.547" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="Runner.runnerTest" time="117.206" tests="4" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -19,7 +19,7 @@
     <property name="user.country" value="IN"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_241\jre\bin"/>
-    <property name="sun.java.command" value="C:\Users\admin\AppData\Local\Temp\surefire1692485779419728248\surefirebooter3207951810689188284.jar C:\Users\admin\AppData\Local\Temp\surefire1692485779419728248 2021-01-30T22-10-58_800-jvmRun1 surefire7366039999807145046tmp surefire_06761851136612352275tmp"/>
+    <property name="sun.java.command" value="C:\Users\admin\AppData\Local\Temp\surefire524353107848467571\surefirebooter8297972576864114109.jar C:\Users\admin\AppData\Local\Temp\surefire524353107848467571 2021-01-30T22-37-09_027-jvmRun1 surefire5134549924031257851tmp surefire_04634203013060598618tmp"/>
     <property name="surefire.test.class.path" value="D:\github\CucumberEcommerce\CucumbereCommerce\target\test-classes;D:\github\CucumberEcommerce\CucumbereCommerce\target\classes;C:\Users\admin\.m2\repository\io\cucumber\cucumber-junit\6.9.1\cucumber-junit-6.9.1.jar;C:\Users\admin\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\admin\.m2\repository\io\cucumber\cucumber-core\6.9.1\cucumber-core-6.9.1.jar;C:\Users\admin\.m2\repository\io\cucumber\cucumber-gherkin\6.9.1\cucumber-gherkin-6.9.1.jar;C:\Users\admin\.m2\repository\io\cucumber\cucumber-gherkin-messages\6.9.1\cucumber-gherkin-messages-6.9.1.jar;C:\Users\admin\.m2\repository\io\cucumber\messages\13.2.1\messages-13.2.1.jar;C:\Users\admin\.m2\repository\io\cucumber\tag-expressions\3.0.0\tag-expressions-3.0.0.jar;C:\Users\admin\.m2\repository\io\cucumber\cucumber-expressions\10.3.0\cucumber-expressions-10.3.0.jar;C:\Users\admin\.m2\repository\io\cucumber\datatable\3.5.0\datatable-3.5.0.jar;C:\Users\admin\.m2\repository\io\cucumber\cucumber-plugin\6.9.1\cucumber-plugin-6.9.1.jar;C:\Users\admin\.m2\repository\io\cucumber\docstring\6.9.1\docstring-6.9.1.jar;C:\Users\admin\.m2\repository\io\cucumber\html-formatter\9.0.0\html-formatter-9.0.0.jar;C:\Users\admin\.m2\repository\io\cucumber\create-meta\2.0.4\create-meta-2.0.4.jar;C:\Users\admin\.m2\repository\junit\junit\4.13.1\junit-4.13.1.jar;C:\Users\admin\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\admin\.m2\repository\io\cucumber\cucumber-java\6.9.1\cucumber-java-6.9.1.jar;C:\Users\admin\.m2\repository\io\cucumber\cucumber-picocontainer\6.9.1\cucumber-picocontainer-6.9.1.jar;C:\Users\admin\.m2\repository\org\picocontainer\picocontainer\2.15\picocontainer-2.15.jar;C:\Users\admin\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\admin\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\admin\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\admin\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\admin\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\admin\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Users\admin\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\admin\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\admin\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\admin\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\admin\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\admin\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\admin\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\admin\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\admin\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\admin\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\admin\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\admin\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\admin\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\admin\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\admin\.m2\repository\com\vimalselvam\cucumber-extentsreport\3.1.1\cucumber-extentsreport-3.1.1.jar;C:\Users\admin\.m2\repository\tech\grasshopper\extentreports-cucumber6-adapter\2.6.0\extentreports-cucumber6-adapter-2.6.0.jar;C:\Users\admin\.m2\repository\com\aventstack\extentreports\5.0.5\extentreports-5.0.5.jar;C:\Users\admin\.m2\repository\io\reactivex\rxjava3\rxjava\3.0.4\rxjava-3.0.4.jar;C:\Users\admin\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\admin\.m2\repository\org\freemarker\freemarker\2.3.30\freemarker-2.3.30.jar;C:\Users\admin\.m2\repository\org\projectlombok\lombok\1.18.12\lombok-1.18.12.jar;C:\Users\admin\.m2\repository\tech\grasshopper\extent-pdf-report\1.5.0\extent-pdf-report-1.5.0.jar;C:\Users\admin\.m2\repository\tech\grasshopper\cucumber-pdf-report\1.7.0\cucumber-pdf-report-1.7.0.jar;C:\Users\admin\.m2\repository\org\apache\pdfbox\pdfbox\2.0.21\pdfbox-2.0.21.jar;C:\Users\admin\.m2\repository\org\apache\pdfbox\fontbox\2.0.21\fontbox-2.0.21.jar;C:\Users\admin\.m2\repository\org\knowm\xchart\xchart\3.6.5\xchart-3.6.5.jar;C:\Users\admin\.m2\repository\de\erichseifert\vectorgraphics2d\VectorGraphics2D\0.13\VectorGraphics2D-0.13.jar;C:\Users\admin\.m2\repository\de\rototor\pdfbox\graphics2d\0.27\graphics2d-0.27.jar;C:\Users\admin\.m2\repository\com\madgag\animated-gif-lib\1.4\animated-gif-lib-1.4.jar;C:\Users\admin\.m2\repository\com\github\vandeseer\easytable\0.7.1\easytable-0.7.1.jar;C:\Users\admin\.m2\repository\com\github\ralfstuckert\pdfbox-layout\pdfbox2-layout\1.0.0\pdfbox2-layout-1.0.0.jar;C:\Users\admin\.m2\repository\org\yaml\snakeyaml\1.27\snakeyaml-1.27.jar;C:\Users\admin\.m2\repository\com\aventstack\klov-reporter\5.0.5\klov-reporter-5.0.5.jar;C:\Users\admin\.m2\repository\org\mongodb\bson\3.6.4\bson-3.6.4.jar;C:\Users\admin\.m2\repository\org\apache\httpcomponents\httpclient\4.5.2\httpclient-4.5.2.jar;C:\Users\admin\.m2\repository\org\apache\httpcomponents\httpcore\4.4.4\httpcore-4.4.4.jar;C:\Users\admin\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\admin\.m2\repository\org\apache\httpcomponents\httpmime\4.5.2\httpmime-4.5.2.jar;C:\Users\admin\.m2\repository\org\mongodb\mongodb-driver\3.3.0\mongodb-driver-3.3.0.jar;C:\Users\admin\.m2\repository\org\mongodb\mongodb-driver-core\3.3.0\mongodb-driver-core-3.3.0.jar;C:\Users\admin\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.7.0\junit-jupiter-api-5.7.0.jar;C:\Users\admin\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\admin\.m2\repository\org\junit\platform\junit-platform-commons\1.7.0\junit-platform-commons-1.7.0.jar;C:\Users\admin\.m2\repository\io\github\bonigarcia\webdrivermanager\4.3.0\webdrivermanager-4.3.0.jar;C:\Users\admin\.m2\repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar;C:\Users\admin\.m2\repository\commons-io\commons-io\2.8.0\commons-io-2.8.0.jar;C:\Users\admin\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar;C:\Users\admin\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\admin\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.0.3\httpclient5-5.0.3.jar;C:\Users\admin\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.0.2\httpcore5-5.0.2.jar;C:\Users\admin\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.0.2\httpcore5-h2-5.0.2.jar;C:\Users\admin\.m2\repository\commons-codec\commons-codec\1.13\commons-codec-1.13.jar;C:\Users\admin\.m2\repository\org\rauschig\jarchivelib\1.1.0\jarchivelib-1.1.0.jar;C:\Users\admin\.m2\repository\org\apache\commons\commons-compress\1.20\commons-compress-1.20.jar;C:\Users\admin\.m2\repository\org\jsoup\jsoup\1.13.1\jsoup-1.13.1.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\admin"/>
@@ -32,7 +32,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\admin\AppData\Local\Temp\surefire1692485779419728248\surefirebooter3207951810689188284.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\admin\AppData\Local\Temp\surefire524353107848467571\surefirebooter8297972576864114109.jar"/>
     <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_241\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_241\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_241\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_241\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_241\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_241\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_241\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_241\jre\classes"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
@@ -61,7 +61,28 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="52.0"/>
   </properties>
-  <testcase name="Login with valid credential" classname="Testing Ecommerce" time="21.611">
+  <testcase name="verifying user is able to send message" classname="Validating Contact us feature" time="20.623">
+    <system-out><![CDATA[
+@contact
+Scenario: verifying user is able to send message     &amp#27;[90m# features/ContactUs.feature:4&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32muser is on contact us page&amp#27;[0m                   &amp#27;[90m# stepDefinition.ContactUsTest.user_is_on_contact_us_page()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32muser choose subject heading&amp#27;[0m                    &amp#27;[90m# stepDefinition.ContactUsTest.user_choose_subject_heading()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32muser enter required details&amp#27;[0m                    &amp#27;[90m# stepDefinition.ContactUsTest.user_enter_required_details()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32muser click submit button&amp#27;[0m                      &amp#27;[90m# stepDefinition.ContactUsTest.user_click_submit_button()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32muser should able to send message successfully&amp#27;[0m &amp#27;[90m# stepDefinition.ContactUsTest.user_should_able_to_send_message_successfully()&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Starting ChromeDriver 88.0.4324.96 (68dba2d8a0b149a1d3afac56fa74648032bcf46b-refs/branch-heads/4324@{#1784}) on port 28382
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jan 30, 2021 10:37:16 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="Login with valid credential" classname="Testing Ecommerce" time="19.692">
     <system-out><![CDATA[
 @login
 Scenario: Login with valid credential                                                                 &amp#27;[90m# features/Login.feature:3&amp#27;[0m
@@ -69,14 +90,51 @@ Scenario: Login with valid credential                                           
   &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mUser enters the Username &amp#27;[0m&amp#27;[32m&amp#27;[1mriteshranjanmishra938@gmail.com&amp#27;[0m&amp#27;[32m and Password &amp#27;[0m&amp#27;[32m&amp#27;[1mmishra21&amp#27;[0m&amp#27;[32m into the fields&amp#27;[0m &amp#27;[90m# stepDefinition.LoginTest.user_enters_the_Username_and_Password_into_the_fields(java.lang.String,java.lang.String)&amp#27;[0m
   &amp#27;[32mThen &amp#27;[0m&amp#27;[32muser should be abale to succefully Login&amp#27;[0m                                                       &amp#27;[90m# stepDefinition.LoginTest.user_should_be_abale_to_succefully_Login()&amp#27;[0m
 ]]></system-out>
-    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
-SLF4J: Defaulting to no-operation (NOP) logger implementation
-SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-Starting ChromeDriver 88.0.4324.96 (68dba2d8a0b149a1d3afac56fa74648032bcf46b-refs/branch-heads/4324@{#1784}) on port 4723
+    <system-err><![CDATA[Starting ChromeDriver 88.0.4324.96 (68dba2d8a0b149a1d3afac56fa74648032bcf46b-refs/branch-heads/4324@{#1784}) on port 14490
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Jan 30, 2021 10:11:06 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Jan 30, 2021 10:37:35 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="Searching Product with valid user credebtials" classname="Searching Product and placing order" time="41.853">
+    <system-out><![CDATA[
+@search
+Scenario: Searching Product with valid user credebtials      &amp#27;[90m# features/Search.feature:4&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32muser login into application&amp#27;[0m                          &amp#27;[90m# stepDefinition.SearchTest.user_login_into_application()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32muser search a "&amp#27;[0m&amp#27;[32m&amp#27;[1mProduct&amp#27;[0m&amp#27;[32m"&amp#27;[0m                                &amp#27;[90m# stepDefinition.SearchTest.user_search_a(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32muser click on the add item to cart field&amp#27;[0m               &amp#27;[90m# stepDefinition.SearchTest.user_click_on_the_add_item_to_cart_field()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32muser click on the proceed to checkout field&amp#27;[0m            &amp#27;[90m# stepDefinition.SearchTest.user_click_on_the_proceed_to_checkout_field()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32muser click on agree term and proceed to checkout field&amp#27;[0m &amp#27;[90m# stepDefinition.SearchTest.user_click_on_agree_term_and_proceed_to_checkout_field()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32muser add payment method&amp#27;[0m                                &amp#27;[90m# stepDefinition.SearchTest.user_add_payment_method()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32muser click on the confirm order&amp#27;[0m                       &amp#27;[90m# stepDefinition.SearchTest.user_click_on_the_confirm_order()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32muser should be able to place order of the product&amp#27;[0m     &amp#27;[90m# stepDefinition.SearchTest.user_should_be_able_to_place_order_of_the_product()&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 88.0.4324.96 (68dba2d8a0b149a1d3afac56fa74648032bcf46b-refs/branch-heads/4324@{#1784}) on port 44092
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jan 30, 2021 10:37:55 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="sign up for valid credential" classname="SignUp for New User" time="28.897">
+    <system-out><![CDATA[
+@SignUp
+Scenario: sign up for valid credential             &amp#27;[90m# features/signUp.feature:4&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32muser navigate application url&amp#27;[0m              &amp#27;[90m# stepDefinition.SignUpTest.user_navigate_application_url()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32muser enter email id&amp#27;[0m                          &amp#27;[90m# stepDefinition.SignUpTest.user_enter_email_id()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32muser enter his personal information&amp#27;[0m          &amp#27;[90m# stepDefinition.SignUpTest.user_enter_his_personal_information()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32muser enter valid address&amp#27;[0m                     &amp#27;[90m# stepDefinition.SignUpTest.user_enter_valid_address()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32muser click on register button&amp#27;[0m               &amp#27;[90m# stepDefinition.SignUpTest.user_click_on_register_button()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32muser should be abale to succefully Register&amp#27;[0m &amp#27;[90m# stepDefinition.SignUpTest.user_should_be_abale_to_succefully_Register()&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 88.0.4324.96 (68dba2d8a0b149a1d3afac56fa74648032bcf46b-refs/branch-heads/4324@{#1784}) on port 8779
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jan 30, 2021 10:38:37 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>

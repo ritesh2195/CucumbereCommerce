@@ -11,30 +11,29 @@
 	
 	public class LoginTest {
 
-		 LaunchPage LaunchPage1;
-		 SignInPage signInPage;
-		 VerifyingPage verifyingPage;
-		 TestContext testContext;
+		LaunchPage launchPage;
+		SignInPage signInPage;
+		TestContext testContext;
 
 		public LoginTest(TestContext context){
 
 		testContext=context;
+
+		launchPage=testContext.getPageObjectManager().getLaunchPage();
+
+		signInPage=testContext.getPageObjectManager().getSignPage();
 
 		}
 
 		@Given("^I naviagate to launch page of the application and click on login link field$")
 		public void i_naviagate_to_launch_page_of_the_application() {
 
-		LaunchPage1=testContext.getPageObjectManager().getLaunchPage();
-
-	        LaunchPage1.SingInPage();
+		launchPage.SingInPage();
 
 		}
 		
 		@When("^User enters the Username ([^\"]*) and Password ([^\"]*) into the fields$")
 		public void user_enters_the_Username_and_Password_into_the_fields(String username, String password) throws InterruptedException {
-
-		signInPage=testContext.getPageObjectManager().getSignPage();
 
 		signInPage.DoSignin(Constant.USERNAME,Constant.PASSWORD );
 
@@ -42,8 +41,6 @@
 
 		@Then("^user should be abale to succefully Login$")
 		public void user_should_be_abale_to_succefully_Login() {
-
-		verifyingPage=testContext.getPageObjectManager().getVerifyingPage();
 
 		String title = signInPage.verifyLoginTitle();
 

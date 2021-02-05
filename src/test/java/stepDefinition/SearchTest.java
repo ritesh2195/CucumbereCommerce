@@ -13,13 +13,12 @@ public class SearchTest {
     CartPage cartPage;
     TermPage termPage;
     ConfirmationPage confirmationPage;
-    LaunchPage LaunchPage1;
+    LaunchPage launchPage;
     Payment paymentPage;
     ProceedPage proceedPage;
     SearchItemPage searchIteamPage;
     SelectItem selectItemPage;
     SignInPage SignPage1;
-    VerifyingPage verifyingPage;
     TestContext testContext;
     static String cartPrice;
     static String finalPrice;
@@ -31,16 +30,28 @@ public class SearchTest {
 
         testContext=context;
 
+        launchPage=testContext.getPageObjectManager().getLaunchPage();
+
+        SignPage1=testContext.getPageObjectManager().getSignPage();
+
+        searchIteamPage=testContext.getPageObjectManager().getSearchIteamPage();
+
+        selectItemPage=testContext.getPageObjectManager().getSelectItemPage();
+
+        proceedPage=testContext.getPageObjectManager().getProceedPage();
+
+        termPage=testContext.getPageObjectManager().getTermPage();
+
+        paymentPage=testContext.getPageObjectManager().getPayment();
+
+        confirmationPage=testContext.getPageObjectManager().getConfirmationPage();
+
     }
 
     @Given("^user login into application$")
     public void user_login_into_application()  {
 
-     LaunchPage1=testContext.getPageObjectManager().getLaunchPage();
-
-     LaunchPage1.SingInPage();
-
-     SignPage1=testContext.getPageObjectManager().getSignPage();
+     launchPage.SingInPage();
 
      SignPage1.DoSignin(Constant.USERNAME,Constant.PASSWORD );
 
@@ -49,11 +60,7 @@ public class SearchTest {
     @Given("^user search a \"([^\"]*)\"$")
     public void user_search_a(String Product) {
 
-    searchIteamPage=testContext.getPageObjectManager().getSearchIteamPage();
-
     searchIteamPage.searchItem("dress");
-
-    selectItemPage=testContext.getPageObjectManager().getSelectItemPage();
 
     selectedItem = selectItemPage.getSelectedProductName();
 
@@ -77,8 +84,6 @@ public class SearchTest {
     @Given("^user click on the proceed to checkout field$")
     public void user_click_on_the_proceed_to_checkout_field() {
 
-    proceedPage=testContext.getPageObjectManager().getProceedPage();
-
     finalPrice = proceedPage.getFinalPrice();
 
     proceedPage.proceedCheckout();
@@ -88,8 +93,6 @@ public class SearchTest {
     @Given("^user click on agree term and proceed to checkout field$")
     public void user_click_on_agree_term_and_proceed_to_checkout_field() {
 
-     termPage=testContext.getPageObjectManager().getTermPage();
-
      termPage.agreeTerm1();
 
     }
@@ -97,16 +100,12 @@ public class SearchTest {
     @Given("^user add payment method$")
     public void user_add_payment_method() {
 
-     paymentPage=testContext.getPageObjectManager().getPayment();
-
      paymentPage.payment();
 
     }
 
     @When("^user click on the confirm order$")
     public void user_click_on_the_confirm_order() {
-
-    confirmationPage=testContext.getPageObjectManager().getConfirmationPage();
 
     actualPageTitle = confirmationPage.confirm();
 
