@@ -2,6 +2,7 @@ package stepDefinition;
 
 import CBPack.Page.*;
 import CBPack.cucumber.TestContext;
+import CBPack.enums.Context;
 import CBPack.util.Constant;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -11,45 +12,41 @@ import org.junit.Assert;
 public class SearchTest {
 
     CartPage cartPage;
-    TermPage termPage;
+    ShippingPage termPage;
     ConfirmationPage confirmationPage;
     LaunchPage launchPage;
     Payment paymentPage;
-    ProceedPage proceedPage;
+    SummaryPage proceedPage;
     SearchItemPage searchIteamPage;
     SelectItem selectItemPage;
     SignInPage SignPage1;
     TestContext testContext;
-    static String cartPrice;
-    static String finalPrice;
     static String actualPageTitle;
-    static String selectedItem;
-    static String cartItem;
 
     public SearchTest(TestContext context){
 
-        testContext=context;
+     testContext=context;
 
-        launchPage=testContext.getPageObjectManager().getLaunchPage();
+     launchPage=testContext.getPageObjectManager().getLaunchPage();
 
-        SignPage1=testContext.getPageObjectManager().getSignPage();
+     SignPage1=testContext.getPageObjectManager().getSignPage();
 
-        searchIteamPage=testContext.getPageObjectManager().getSearchIteamPage();
+     searchIteamPage=testContext.getPageObjectManager().getSearchIteamPage();
 
-        selectItemPage=testContext.getPageObjectManager().getSelectItemPage();
+     selectItemPage=testContext.getPageObjectManager().getSelectItemPage();
 
-        proceedPage=testContext.getPageObjectManager().getProceedPage();
+     proceedPage=testContext.getPageObjectManager().getProceedPage();
 
-        termPage=testContext.getPageObjectManager().getTermPage();
+     termPage=testContext.getPageObjectManager().getTermPage();
 
-        paymentPage=testContext.getPageObjectManager().getPayment();
+     paymentPage=testContext.getPageObjectManager().getPayment();
 
-        confirmationPage=testContext.getPageObjectManager().getConfirmationPage();
+     confirmationPage=testContext.getPageObjectManager().getConfirmationPage();
 
     }
 
     @Given("^user login into application$")
-    public void user_login_into_application()  {
+    public void user_login_into_application() {
 
      launchPage.SingInPage();
 
@@ -62,7 +59,9 @@ public class SearchTest {
 
     searchIteamPage.searchItem(Product);
 
-    selectedItem = selectItemPage.getSelectedProductName();
+    String selectedItem = selectItemPage.getSelectedProductName();
+
+    testContext.getScenarioContext().setContext(Context.PRODUCT_NAME, selectedItem);
 
     selectItemPage.choosingItem();
 
@@ -73,18 +72,36 @@ public class SearchTest {
 
     cartPage=testContext.getPageObjectManager().getCartPage();
 
-    cartItem = cartPage.getCartProductName();
+    String cartItem = cartPage.getCartProductName();
 
-    cartPrice = cartPage.getCartPrice();
+    String selectedProduct = (String)testContext.getScenarioContext().getContext(Context.PRODUCT_NAME);
 
-    cartPage.addCart();
+    Assert.assertEquals(selectedProduct, cartItem);
+
+    String cartPrice = cartPage.getCartPrice();
+
+    cartPrice = cartPrice.substring(1).trim();
+
+    double cartAmount = Double.parseDouble(cartPrice);
+
+    testContext.getScenarioContext().setContext(Context.Product_PRICE, cartAmount);
+
+    cartPage.addCart(Constant.quantity,Constant.size);
 
     }
 
     @Given("^user click on the proceed to checkout field$")
     public void user_click_on_the_proceed_to_checkout_field() {
 
-    finalPrice = proceedPage.getFinalPrice();
+    String finalPrice = proceedPage.getFinalPrice();
+
+    finalPrice = finalPrice.substring(1).trim();
+
+    double finalAmount = Double.parseDouble(finalPrice);
+
+    Double cartAmount = (Double) testContext.getScenarioContext().getContext(Context.Product_PRICE);
+
+    Assert.assertEquals(Constant.quantity*cartAmount, finalAmount, .01);
 
     proceedPage.proceedCheckout();
 
@@ -113,10 +130,6 @@ public class SearchTest {
 
     @Then("^user should be able to place order of the product$")
     public void user_should_be_able_to_place_order_of_the_product() {
-
-    Assert.assertEquals(cartPrice,finalPrice);
-
-    Assert.assertEquals(selectedItem, cartItem);
 
     Assert.assertEquals("Order confirmation - My Store",actualPageTitle);
 

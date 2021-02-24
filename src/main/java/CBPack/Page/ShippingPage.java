@@ -5,7 +5,7 @@
 	import org.openqa.selenium.support.FindBy;
 	import org.openqa.selenium.support.PageFactory;
 
-	  public class TermPage extends BasePage {
+	  public class ShippingPage extends BasePage {
 
 		@FindBy(id="cgv")
 		private WebElement agreeTerm1;
@@ -13,7 +13,7 @@
 		@FindBy(name="processCarrier")
 		private WebElement proceedCheckout3;
 		
-		public TermPage(WebDriver driver) {
+		public ShippingPage(WebDriver driver) {
 
 			super(driver);
 

@@ -7,11 +7,11 @@ public class PageObjectManager {
 
     private WebDriver driver;
     private CartPage cartPage;
-    private TermPage termPage;
+    private ShippingPage termPage;
     private ConfirmationPage confirmationPage;
     private LaunchPage LaunchPage1;
     private Payment paymentPage;
-    private ProceedPage proceedPage;
+    private SummaryPage proceedPage;
     private SearchItemPage searchIteamPage;
     private SelectItem selectItemPage;
     private SignInPage SignPage1;
@@ -28,8 +28,8 @@ public class PageObjectManager {
         return (cartPage==null) ? cartPage=new CartPage(driver) : cartPage;
     }
 
-    public TermPage getTermPage() {
-        return (termPage==null) ? termPage = new TermPage(driver) : termPage;
+    public ShippingPage getTermPage() {
+        return (termPage==null) ? termPage = new ShippingPage(driver) : termPage;
     }
 
     public ConfirmationPage getConfirmationPage(){
@@ -47,9 +47,9 @@ public class PageObjectManager {
         return (paymentPage==null) ? paymentPage = new Payment(driver) : paymentPage;
     }
 
-    public ProceedPage getProceedPage(){
+    public SummaryPage getProceedPage(){
 
-        return (proceedPage==null) ? proceedPage = new ProceedPage(driver) : proceedPage;
+        return (proceedPage==null) ? proceedPage = new SummaryPage(driver) : proceedPage;
     }
 
     public SearchItemPage getSearchIteamPage(){

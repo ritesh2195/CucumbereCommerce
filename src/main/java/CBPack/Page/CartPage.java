@@ -39,15 +39,15 @@
 	
 	}
 	
-	public void addCart() {
+	public void addCart(int quantity, String size) {
 		
 	qualityWanted.clear();
 	
-	qualityWanted.sendKeys("1");
+	qualityWanted.sendKeys(String.valueOf(quantity));
 	
 	Select select=new Select(Size);
 	
-	select.selectByValue("2");
+	select.selectByValue(size);
 	
 	Colour.click();
 	

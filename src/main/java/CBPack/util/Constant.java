@@ -17,5 +17,9 @@
 		public static final String orderReference = "MRTCQTWZW";
 
 		public static final String message = "I am not getting my order";
+
+		public static final int quantity = 2;
+
+		public static final String size = "2";
 		
 	}

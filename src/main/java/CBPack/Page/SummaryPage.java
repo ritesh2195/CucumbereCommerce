@@ -5,7 +5,7 @@
 	import org.openqa.selenium.support.FindBy;
 	import org.openqa.selenium.support.PageFactory;
 
- public class ProceedPage extends BasePage {
+ public class SummaryPage extends BasePage {
 
 	@FindBy(className="standard-checkout")
 	private WebElement proceedCheckout1;
@@ -16,7 +16,7 @@
 	@FindBy(id = "total_product")
 	private WebElement ProductPrice;
 	
-	public ProceedPage(WebDriver driver) {
+	public SummaryPage(WebDriver driver) {
 
 		super(driver);
 
