@@ -103,6 +103,12 @@ public class SearchTest {
 
     Assert.assertEquals(Constant.quantity*cartAmount, finalAmount, .01);
 
+    double totalPrice = proceedPage.getTotalPrice();
+
+    double grandTotalPrice = proceedPage.getGrandTotal();
+
+    Assert.assertEquals(totalPrice, grandTotalPrice,.01);
+
     proceedPage.proceedCheckout();
 
     }
@@ -132,6 +138,10 @@ public class SearchTest {
     public void user_should_be_able_to_place_order_of_the_product() {
 
     Assert.assertEquals("Order confirmation - My Store",actualPageTitle);
+
+    String msg = confirmationPage.verifyConfirmationMessage();
+
+    Assert.assertEquals("Your order on My Store is complete.", msg);
 
     }
 

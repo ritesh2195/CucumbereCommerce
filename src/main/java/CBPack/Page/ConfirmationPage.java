@@ -9,6 +9,9 @@
 
 	@FindBy(xpath="//*[text()='I confirm my order']")
 	private WebElement confirmOrder;
+
+	@FindBy(css = ".alert.alert-success")
+	private WebElement Message;
 	
 	public ConfirmationPage(WebDriver driver) {
 
@@ -26,6 +29,12 @@
 
 	return getPageTitle();
 		
+	}
+
+	public String verifyConfirmationMessage(){
+
+		return Message.getText();
+
 	}
 
 	}

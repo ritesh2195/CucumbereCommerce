@@ -2,21 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e195e743-e1a0-4072-80b8-2cd766418676" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/$PRODUCT_WORKSPACE_FILE$" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/$PRODUCT_WORKSPACE_FILE$" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CBPack/Page/CartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CBPack/Page/CartPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CBPack/Page/ProceedPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CBPack/Page/SummaryPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CBPack/Page/TermPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CBPack/Page/ShippingPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CBPack/cucumber/TestContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CBPack/cucumber/TestContext.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CBPack/mangers/PageObjectManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CBPack/mangers/PageObjectManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CBPack/util/Constant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CBPack/util/Constant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CBPack/Page/ConfirmationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CBPack/Page/ConfirmationPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CBPack/Page/SummaryPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CBPack/Page/SummaryPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinition/SearchTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinition/SearchTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CBPack/Page/CartPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/CBPack/Page/CartPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CBPack/Page/ProceedPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CBPack/Page/TermPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CBPack/cucumber/TestContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/CBPack/cucumber/TestContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CBPack/mangers/PageObjectManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/CBPack/mangers/PageObjectManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CBPack/util/Constant.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/CBPack/util/Constant.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/CBPack/Page/ConfirmationPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/CBPack/Page/ConfirmationPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/CBPack/Page/SummaryPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/CBPack/Page/SummaryPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinition/Hooks.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepDefinition/Hooks.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinition/SearchTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepDefinition/SearchTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/SparkReport/Spark.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/SparkReport/Spark.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/SparkReport/report.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/SparkReport/report.pdf" afterDir="false" />
