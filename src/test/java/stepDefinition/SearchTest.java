@@ -60,7 +60,7 @@ public class SearchTest {
     @Given("^user search a \"([^\"]*)\"$")
     public void user_search_a(String Product) {
 
-    searchIteamPage.searchItem("dress");
+    searchIteamPage.searchItem(Product);
 
     selectedItem = selectItemPage.getSelectedProductName();
 

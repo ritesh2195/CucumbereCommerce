@@ -4,7 +4,7 @@ Feature: Searching Product and placing order
   Scenario: Searching Product with valid user credebtials
 
     Given user login into application
-    And user search a "Product"
+    And user search a "dress"
     And user click on the add item to cart field
     And user click on the proceed to checkout field
     And user click on agree term and proceed to checkout field

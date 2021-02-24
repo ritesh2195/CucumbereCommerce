@@ -10,9 +10,9 @@ import org.junit.runner.RunWith;
 
 		features= {"features"},
 
-		glue= {"stepDefinition"}
+		glue= {"stepDefinition"},
 
-		//tags= "@SignUp"
+		tags= "@search"
 
 )
 public class runnerTest {
