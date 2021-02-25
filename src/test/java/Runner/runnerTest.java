@@ -8,11 +8,11 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(plugin= {"pretty","com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
 
-		features= {"features"},
+		features= {"src//test//resources//feature"},
 
 		glue= {"stepDefinition"},
 
-		tags= "@unsuccessfully"
+		tags= "@SignUp"
 
 )
 public class runnerTest {
