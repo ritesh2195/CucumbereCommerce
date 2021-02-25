@@ -19,7 +19,7 @@ public class SearchTest {
     SummaryPage proceedPage;
     SearchItemPage searchIteamPage;
     SelectItem selectItemPage;
-    SignInPage SignPage1;
+    SignInPage signInPage;
     TestContext testContext;
     static String actualPageTitle;
 
@@ -29,7 +29,7 @@ public class SearchTest {
 
      launchPage=testContext.getPageObjectManager().getLaunchPage();
 
-     SignPage1=testContext.getPageObjectManager().getSignPage();
+     signInPage=testContext.getPageObjectManager().getSignPage();
 
      searchIteamPage=testContext.getPageObjectManager().getSearchIteamPage();
 
@@ -50,7 +50,15 @@ public class SearchTest {
 
      launchPage.SingInPage();
 
-     SignPage1.DoSignin(Constant.USERNAME,Constant.PASSWORD );
+     signInPage.DoSignin(Constant.USERNAME,Constant.PASSWORD );
+
+     String title = signInPage.verifyLoginTitle();
+
+     Assert.assertEquals("MY ACCOUNT", title);
+
+     String message = signInPage.verifyLoginMessage();
+
+     Assert.assertTrue(message.contains("Welcome to your account."));
 
     }
 

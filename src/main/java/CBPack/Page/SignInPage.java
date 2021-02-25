@@ -22,6 +22,9 @@
 	@FindBy(xpath = "//span[text()='My personal information']")
 	private WebElement PersonalInfo;
 
+	@FindBy(css = ".account span")
+	private WebElement Name;
+
 	@FindBy(css = "#email")
 	private WebElement email;
 
@@ -57,6 +60,11 @@
 	 public String verifyLoginMessage(){
 
 		return loginMessage.getText();
+	 }
+
+	 public String verifyUserName(){
+
+		return Name.getText();
 	 }
 
 	 public String getLoginEmail(){

@@ -3,16 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="e195e743-e1a0-4072-80b8-2cd766418676" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CBPack/Page/ConfirmationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CBPack/Page/ConfirmationPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CBPack/Page/SummaryPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CBPack/Page/SummaryPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CBPack/Page/SignInPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CBPack/Page/SignInPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Runner/runnerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Runner/runnerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinition/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinition/LoginTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinition/SearchTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinition/SearchTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CBPack/Page/ConfirmationPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/CBPack/Page/ConfirmationPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CBPack/Page/SummaryPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/CBPack/Page/SummaryPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinition/Hooks.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepDefinition/Hooks.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinition/SearchTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepDefinition/SearchTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/SparkReport/Spark.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/SparkReport/Spark.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/SparkReport/report.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/SparkReport/report.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/embedded1.png" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/embedded1.png" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

@@ -46,9 +46,15 @@
 
 		String message = signInPage.verifyLoginMessage();
 
+		String name = signInPage.verifyUserName();
+
 		Assert.assertEquals("MY ACCOUNT", title);
 
-		Assert.assertEquals("Welcome to your account. Here you can manage all of your personal information and orders.", message);
+		//Assert.assertEquals("Welcome to your account. Here you can manage all of your personal information and orders.", message);
+
+		Assert.assertTrue(message.contains("Welcome to your account."));
+
+		Assert.assertEquals("vinit kumar", name);
 
 		String email = signInPage.getLoginEmail();
 
