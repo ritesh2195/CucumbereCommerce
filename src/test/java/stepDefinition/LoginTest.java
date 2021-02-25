@@ -25,21 +25,21 @@
 
 		}
 
-		@Given("^I naviagate to launch page of the application and click on login link field$")
+		@Given("^user navigate to login page$")
 		public void i_naviagate_to_launch_page_of_the_application() {
 
 		launchPage.SingInPage();
 
 		}
 		
-		@When("^User enters the Username ([^\"]*) and Password ([^\"]*) into the fields$")
+		@When("^user enters the Username ([^\"]*) and Password ([^\"]*) into the fields$")
 		public void user_enters_the_Username_and_Password_into_the_fields(String username, String password) throws InterruptedException {
 
 		signInPage.DoSignin(Constant.USERNAME,Constant.PASSWORD );
 
 		}
 
-		@Then("^user should be abale to succefully Login$")
+		@Then("^user should be able to login successfully$")
 		public void user_should_be_abale_to_succefully_Login() {
 
 		String title = signInPage.verifyLoginTitle();

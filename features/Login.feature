@@ -1,6 +1,19 @@
 Feature: Testing Ecommerce
+
+Background: user is on login page
+
+  Given user navigate to login page
+
 @login
 Scenario: Login with valid credential
-  Given I naviagate to launch page of the application and click on login link field
-  When User enters the Username riteshranjanmishra938@gmail.com and Password mishra21 into the fields
-  Then user should be abale to succefully Login
+  When user enters the Username rrm@gmail.com and Password qwerty into the fields
+  Then user should be able to login successfully
+
+@login_unsuccessfully
+Scenario Outline:
+  When user enters invalid sets of "<username>" and "<password>" and click on login button
+  Then user should not be able to login successfully
+  Examples:
+    | username | password |
+    | rrm@gmail.com| dhyhdj|
+    | dchbdcb@gmail.com| qwerty|

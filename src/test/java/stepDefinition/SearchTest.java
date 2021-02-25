@@ -62,7 +62,7 @@ public class SearchTest {
 
     }
 
-    @Given("^user search a \"([^\"]*)\"$")
+    @When("^user search a \"([^\"]*)\"$")
     public void user_search_a(String Product) {
 
     searchIteamPage.searchItem(Product);
@@ -75,7 +75,7 @@ public class SearchTest {
 
     }
 
-    @Given("^user click on the add item to cart field$")
+    @When("^user click on the add item to cart field$")
     public void user_click_on_the_add_item_to_cart_field() {
 
     cartPage=testContext.getPageObjectManager().getCartPage();
@@ -98,7 +98,7 @@ public class SearchTest {
 
     }
 
-    @Given("^user click on the proceed to checkout field$")
+    @When("^user click on the proceed to checkout field$")
     public void user_click_on_the_proceed_to_checkout_field() {
 
     String finalPrice = proceedPage.getFinalPrice();
@@ -121,14 +121,14 @@ public class SearchTest {
 
     }
 
-    @Given("^user click on agree term and proceed to checkout field$")
+    @When("^user click on agree term and proceed to checkout field$")
     public void user_click_on_agree_term_and_proceed_to_checkout_field() {
 
      termPage.agreeTerm1();
 
     }
 
-    @Given("^user add payment method$")
+    @When("^user add payment method$")
     public void user_add_payment_method() {
 
      paymentPage.payment();

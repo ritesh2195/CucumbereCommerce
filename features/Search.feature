@@ -4,10 +4,10 @@ Feature: Searching Product and placing order
   Scenario: Searching Product with valid user credebtials
 
     Given user login into application
-    And user search a "dress"
+    When user search a "dress"
     And user click on the add item to cart field
     And user click on the proceed to checkout field
     And user click on agree term and proceed to checkout field
     And user add payment method
-    When user click on the confirm order
+    And user click on the confirm order
     Then user should be able to place order of the product

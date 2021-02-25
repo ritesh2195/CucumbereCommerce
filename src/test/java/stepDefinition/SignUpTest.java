@@ -2,17 +2,13 @@ package stepDefinition;
 
 import CBPack.Page.LaunchPage;
 import CBPack.Page.SignUpPage;
-import CBPack.Page.VerifyingPage;
 import CBPack.cucumber.TestContext;
-import CBPack.mangers.PageObjectManager;
-import CBPack.mangers.WebDriverManager;
 import CBPack.util.RandomDataGenerator;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
-import org.openqa.selenium.WebDriver;
 
 public class SignUpTest {
 
@@ -39,7 +35,7 @@ public class SignUpTest {
 
     }
 
-    @And("^user enter email id$")
+    @When("^user enter email id$")
     public void user_enter_email_id(){
 
      signUpPage.setEmail(expectedEmail);
@@ -84,7 +80,7 @@ public class SignUpTest {
 
     }
 
-    @When("^user click on register button$")
+    @And("^user click on register button$")
     public void user_click_on_register_button(){
 
      signUpPage.clickSubmit();
