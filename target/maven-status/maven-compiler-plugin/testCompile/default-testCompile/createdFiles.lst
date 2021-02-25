@@ -2,6 +2,7 @@ Runner\runnerTest.class
 stepDefinition\SearchTest.class
 stepDefinition\Hooks.class
 stepDefinition\SignUpTest.class
+Runner\TestNGRunnerTest.class
 stepDefinition\ContactUsTest.class
 stepDefinition\LoginTest.class
 Base\base.class

@@ -30,6 +30,12 @@
 
 	@FindBy(css = ".info-account")
 	private WebElement loginMessage;
+
+	@FindBy(css = ".alert.alert-danger p")
+	private WebElement ErrorMessage;
+
+	@FindBy(css = ".alert.alert-danger ol li")
+	private WebElement Authentication;
 	
 	public SignInPage(WebDriver driver) {
 
@@ -77,5 +83,14 @@
 
 		return email.getAttribute("value");
 	 }
-	
-	}
+
+	 public String getErrorMessage() {
+
+		return ErrorMessage.getText();
+	 }
+
+	 public String getAuthenticationMessage() {
+
+		return Authentication.getText();
+	 }
+ }

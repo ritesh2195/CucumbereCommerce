@@ -1,19 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e195e743-e1a0-4072-80b8-2cd766418676" name="Default Changelist" comment="">
+    <list default="true" id="1c4d1237-347c-4c6e-b20c-2a2007f53bfc" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/$PRODUCT_WORKSPACE_FILE$" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/$PRODUCT_WORKSPACE_FILE$" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/features/Login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/features/Login.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/features/Search.feature" beforeDir="false" afterPath="$PROJECT_DIR$/features/Search.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/features/signUp.feature" beforeDir="false" afterPath="$PROJECT_DIR$/features/signUp.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CBPack/Page/SignInPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CBPack/Page/SignInPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Runner/runnerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Runner/runnerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinition/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinition/LoginTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinition/SearchTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinition/SearchTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinition/SignUpTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinition/SignUpTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/CBPack/Page/SignInPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/CBPack/Page/SignInPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/Cucumber12.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2021-01-30T22-37-09_027.dumpstream" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/Runner.runnerTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/Runner.runnerTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-Runner.runnerTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-Runner.runnerTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/Runner/runnerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Runner/runnerTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinition/LoginTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepDefinition/LoginTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinition/SearchTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepDefinition/SearchTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinition/SignUpTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepDefinition/SignUpTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/SparkReport/Spark.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/SparkReport/Spark.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/SparkReport/report.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/SparkReport/report.pdf" afterDir="false" />
     </list>
@@ -26,7 +33,6 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -34,7 +40,14 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1oulDngpkojeaJlL1tcsi4k1Ned" />
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1oyuSCTEFZsj33QGXoA265eujA3" />
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="D:/Protractor" />
   </component>
@@ -50,25 +63,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.runnerTest">
-    <configuration name="Scenario: " type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="3" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/features/Login.feature" />
-      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
-      <module name="Cucumber12" />
-      <option name="NAME_FILTER" value="^$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm3SMFormatter --name &quot;^$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: " />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cucumber.api.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG.TestNGRunnerTest">
     <configuration name="runnerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Cucumber12" />
       <extension name="coverage">
@@ -84,10 +79,58 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Cucumber12 [clean,test]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="clean" />
+                <option value="test" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="TestNGRunnerTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Cucumber12" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Runner.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Runner" />
+      <option name="MAIN_CLASS_NAME" value="Runner.TestNGRunnerTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.runnerTest" />
+      <item itemvalue="Maven.Cucumber12 [clean,test]" />
+      <item itemvalue="TestNG.TestNGRunnerTest" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.TestNGRunnerTest" />
         <item itemvalue="JUnit.runnerTest" />
-        <item itemvalue="Cucumber java.Scenario: " />
       </list>
     </recent_temporary>
   </component>
@@ -96,11 +139,11 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="e195e743-e1a0-4072-80b8-2cd766418676" name="Default Changelist" comment="" />
-      <created>1614144238610</created>
+      <changelist id="1c4d1237-347c-4c6e-b20c-2a2007f53bfc" name="Default Changelist" comment="" />
+      <created>1614271150066</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1614144238610</updated>
+      <updated>1614271150066</updated>
     </task>
     <servers />
   </component>
@@ -109,9 +152,7 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>

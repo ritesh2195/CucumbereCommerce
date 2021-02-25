@@ -50,8 +50,6 @@
 
 		Assert.assertEquals("MY ACCOUNT", title);
 
-		//Assert.assertEquals("Welcome to your account. Here you can manage all of your personal information and orders.", message);
-
 		Assert.assertTrue(message.contains("Welcome to your account."));
 
 		Assert.assertEquals("vinit kumar", name);
@@ -60,6 +58,26 @@
 
 		Assert.assertEquals(Constant.USERNAME, email);
 
-		}	
+		}
+
+		@When("user enters invalid sets of {string} and {string} and click on login button")
+		public void user_enters_invalid_sets_of_and_and_click_on_login_button(String email, String password) {
+
+			signInPage.DoSignin(email,password);
+
+		}
+
+		@Then("user should not be able to login successfully")
+		public void user_should_not_be_able_to_login_successfully() {
+
+			String errorMessage = signInPage.getErrorMessage();
+
+			Assert.assertTrue(errorMessage.contains("There is 1 error"));
+
+			String authentication = signInPage.getAuthenticationMessage();
+
+			Assert.assertTrue(authentication.contains("Authentication failed."));
+
+		}
 
 	}
