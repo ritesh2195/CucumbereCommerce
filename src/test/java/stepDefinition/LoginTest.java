@@ -8,7 +8,9 @@
 	import org.junit.Assert;
 	import CBPack.util.Constant;
 
-	
+	import java.util.HashMap;
+
+
 	public class LoginTest {
 
 		LaunchPage launchPage;
@@ -42,11 +44,13 @@
 		@Then("^user should be able to login successfully$")
 		public void user_should_be_abale_to_succefully_Login() {
 
-		String title = signInPage.verifyLoginTitle();
+		HashMap<String, String> map = signInPage.verifyLoginTest();
 
-		String message = signInPage.verifyLoginMessage();
+		String title = map.get("title");
 
-		String name = signInPage.verifyUserName();
+		String message = map.get("message");
+
+		String name = map.get("userName");
 
 		Assert.assertEquals("MY ACCOUNT", title);
 
@@ -54,7 +58,7 @@
 
 		Assert.assertEquals("vinit kumar", name);
 
-		String email = signInPage.getLoginEmail();
+		String email = map.get("email");
 
 		Assert.assertEquals(Constant.USERNAME, email);
 

@@ -9,6 +9,8 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 
+import java.util.HashMap;
+
 public class SearchTest {
 
     CartPage cartPage;
@@ -52,11 +54,13 @@ public class SearchTest {
 
      signInPage.DoSignin(Constant.USERNAME,Constant.PASSWORD );
 
-     String title = signInPage.verifyLoginTitle();
+     HashMap<String, String> map = signInPage.verifyLoginTest();
+
+     String title = map.get("title");
 
      Assert.assertEquals("MY ACCOUNT", title);
 
-     String message = signInPage.verifyLoginMessage();
+     String message = map.get("message");
 
      Assert.assertTrue(message.contains("Welcome to your account."));
 

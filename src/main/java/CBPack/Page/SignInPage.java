@@ -5,6 +5,8 @@
 	import org.openqa.selenium.support.FindBy;
 	import org.openqa.selenium.support.PageFactory;
 
+	import java.util.HashMap;
+
  public class SignInPage extends BasePage {
 
 	@FindBy(id="email")
@@ -55,35 +57,6 @@
 
 	}
 
-	 public String  verifyLoginTitle(){
-
-	 waitForElementVisible(loginElement);
-
-	 return loginElement.getText();
-
-	 }
-
-	 public String verifyLoginMessage(){
-
-		return loginMessage.getText();
-	 }
-
-	 public String verifyUserName(){
-
-		return Name.getText();
-	 }
-
-	 public String getLoginEmail(){
-
-		waitForElementToClickable(PersonalInfo);
-
-		PersonalInfo.click();
-
-		waitForElementToClickable(email);
-
-		return email.getAttribute("value");
-	 }
-
 	 public String getErrorMessage() {
 
 		return ErrorMessage.getText();
@@ -92,5 +65,30 @@
 	 public String getAuthenticationMessage() {
 
 		return Authentication.getText();
+	 }
+
+	 public HashMap<String, String> verifyLoginTest(){
+
+		 HashMap<String, String> map = new HashMap<>();
+
+		 waitForElementVisible(loginElement);
+
+		 String title = loginElement.getText();
+
+		 map.put("title", title);
+
+		 map.put("message", loginMessage.getText());
+
+		 map.put("userName", Name.getText());
+
+		 waitForElementToClickable(PersonalInfo);
+
+		 PersonalInfo.click();
+
+		 waitForElementToClickable(email);
+
+		 map.put("email", email.getAttribute("value"));
+
+		 return map;
 	 }
  }
